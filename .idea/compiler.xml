@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="filmjur_main" target="1.8" />
+      <module name="filmjur_test" target="1.8" />
       <module name="Java_Projects_main" target="1.8" />
       <module name="Java_Projects_test" target="1.8" />
     </bytecodeTargetLevel>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Java_Projects.iml" filepath="$PROJECT_DIR$/.idea/modules/Java_Projects.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Java_Projects_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Java_Projects_main.iml" group="Java_Projects" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Java_Projects_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Java_Projects_test.iml" group="Java_Projects" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filmjur.iml" filepath="$PROJECT_DIR$/.idea/modules/filmjur.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filmjur_main.iml" filepath="$PROJECT_DIR$/.idea/modules/filmjur_main.iml" group="filmjur" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filmjur_test.iml" filepath="$PROJECT_DIR$/.idea/modules/filmjur_test.iml" group="filmjur" />
     </modules>
   </component>
 </project>
