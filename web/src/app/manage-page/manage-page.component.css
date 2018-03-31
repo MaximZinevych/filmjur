@@ -1,0 +1,13 @@
+.tile{
+  border-radius: 25px;
+}
+
+.tile:hover {
+  -webkit-transform: scale(1.05,1.05);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 550ms;
+  -moz-transform: scale(1.05,1.05);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 550ms;
+  z-index: 5;
+}

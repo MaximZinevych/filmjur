@@ -5,17 +5,27 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { LoginPageComponent } from './login-page/login-page.component';
-import {MatButtonModule, MatFormFieldModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatGridListModule,
+  MatInputModule,
+  MatToolbarModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
 import {AppRoutingModule} from './app-routing.module';
+import { AppNavbarComponent } from './app-navbar/app-navbar.component';
+import { ManagePageComponent } from './manage-page/manage-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    MainPageComponent
+    MainPageComponent,
+    AppNavbarComponent,
+    ManagePageComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +35,9 @@ import {AppRoutingModule} from './app-routing.module';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent

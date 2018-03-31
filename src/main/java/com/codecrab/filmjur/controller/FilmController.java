@@ -1,7 +1,7 @@
 package com.codecrab.filmjur.controller;
 
-import com.codecrab.filmjur.entity.Country;
-import com.codecrab.filmjur.service.CountryService;
+import com.codecrab.filmjur.entity.Film;
+import com.codecrab.filmjur.service.FilmService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,14 +12,14 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/api")
-public class CountryController {
+public class FilmController {
 
     @Autowired
-    CountryService countryService;
+    private FilmService filmService;
 
-    @ResponseBody @GetMapping(path = "/getAllCountries")
-    public List<Country> getAllCountries(){
-        List<Country> countryList = countryService.findAll();
-        return countryList;
+    @ResponseBody
+    @GetMapping(path = "/getAllFilms")
+    public List<Film> getAllFilms(){
+        return  filmService.findAll();
     }
 }
