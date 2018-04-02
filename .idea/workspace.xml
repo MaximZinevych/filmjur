@@ -2,67 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de450367-7662-4041-a5ff-6d8ddc145144" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.5/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_core_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_schema_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spi_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_web_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger2_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_common_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_ui_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_annotations_1_5_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_swagger_swagger_models_1_5_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_postgresql_postgresql_42_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reflections_reflections_0_9_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/controller/CountryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/controller/ServerTimeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/entity/Country.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/repository/CountryRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/codecrab/filmjur/service/CountryService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/inline.318b50c57b4eba3d437b.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/login-wallpaper.6fc04653eff0745f2cea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/login-wallpaper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/main.eb8e6d5f5174d573b850.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/polyfills.bf95165a1d5098766b92.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/static/styles.92e4f2c4718376d975e3.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/login-wallpaper.6fc04653eff0745f2cea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.eb8e6d5f5174d573b850.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.angular-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/.angular-cli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/main-page/main-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/main-page/main-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/manage-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/manage-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/manage-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/manage-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -120,20 +63,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#884#885#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#985#986#0" expanded="true" />
+                <element signature="e#1043#1044#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1191#1192#0" expanded="true" />
+                <element signature="e#1255#1256#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenreService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -148,27 +124,6 @@
                 <element signature="e#1236#1237#0" expanded="true" />
                 <element signature="e#1300#1301#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilmService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/FilmService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilmServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/FilmServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -194,44 +149,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenreServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
+      <file leaf-file-name="GenreRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state relative-caret-position="179">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#785#786#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1089#1090#0" expanded="true" />
-                <element signature="e#1145#1146#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java">
+      <file leaf-file-name="GenreController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/GenreController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="148">
+              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenreController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/GenreController.java">
+      <file leaf-file-name="CountryServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -699,12 +642,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/LocalTimeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/config/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -781,6 +725,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="filmjur" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="filmjur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="filmjur" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="filmjur" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="filmjur" type="b2602c69:ProjectViewProjectNode" />
@@ -975,12 +928,12 @@
       <workItem from="1522679697500" duration="301000" />
       <workItem from="1522680036714" duration="150000" />
       <workItem from="1522680211670" duration="24000" />
-      <workItem from="1522680258322" duration="4279000" />
+      <workItem from="1522680258322" duration="7539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27110000" />
+    <option name="totallyTimeSpent" value="30370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
@@ -1004,10 +957,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49426934" visible="true" weight="0.36497328" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49426934" visible="true" weight="0.53743315" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49056605" visible="true" weight="0.2829513" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49056605" visible="true" weight="0.2829513" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" sideWeight="0.5115607" side_tool="true" weight="0.260745" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.33022922" />
@@ -1034,27 +987,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1275,16 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/util/CustomErrorType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1303,28 +1225,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1349,13 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -1395,10 +1288,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.5.RELEASE/8380157b984eee5852240c8d9a45f72f1fc45f39/spring-data-jpa-2.0.5.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/GenreController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="148">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
