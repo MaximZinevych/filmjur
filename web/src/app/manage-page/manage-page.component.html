@@ -1,9 +1,22 @@
-<mat-grid-list cols="3" rowHeight="200px">
-  <mat-grid-tile class="tile"
-    *ngFor="let tile of tiles"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color">
-    {{tile.text}}
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="list-group">
+  <a [routerLink]="['/manage/genres']" class="list-group-item">
+    <h4 class="list-group-item-heading">Genres</h4>
+    <p class="list-group-item-text">Show and modify genres</p>
+  </a>
+  <a  class="list-group-item">
+    <h4 class="list-group-item-heading">Production Company</h4>
+    <p class="list-group-item-text">Show and modify production companies</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Awards</h4>
+    <p class="list-group-item-text">Show and modify awards</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">People</h4>
+    <p class="list-group-item-text">Show and modify people</p>
+  </a>
+  <a href="#" class="list-group-item">
+    <h4 class="list-group-item-heading">Film</h4>
+    <p class="list-group-item-text">Show and modify films</p>
+  </a>
+</div>
