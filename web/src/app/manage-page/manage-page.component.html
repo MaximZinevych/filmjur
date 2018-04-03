@@ -1,22 +1,29 @@
-<div class="list-group">
-  <a [routerLink]="['/manage/genres']" class="list-group-item">
-    <h4 class="list-group-item-heading">Genres</h4>
-    <p class="list-group-item-text">Show and modify genres</p>
-  </a>
-  <a  class="list-group-item">
-    <h4 class="list-group-item-heading">Production Company</h4>
-    <p class="list-group-item-text">Show and modify production companies</p>
-  </a>
-  <a href="#" class="list-group-item">
-    <h4 class="list-group-item-heading">Awards</h4>
-    <p class="list-group-item-text">Show and modify awards</p>
-  </a>
-  <a href="#" class="list-group-item">
-    <h4 class="list-group-item-heading">People</h4>
-    <p class="list-group-item-text">Show and modify people</p>
-  </a>
-  <a href="#" class="list-group-item">
-    <h4 class="list-group-item-heading">Film</h4>
-    <p class="list-group-item-text">Show and modify films</p>
-  </a>
+<div class="manage-list-container">
+  <mat-grid-list [gutterSize]="10" cols="3" rowHeight="100px">
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/genres']"
+      [colspan]="1"
+      [rowspan]="2"
+      [style.background]="'#ACBDE5'">Genres</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/countries']"
+                   [colspan]="1"
+                   [rowspan]="2"
+                   [style.background]="'#ACBDE5'">Countries</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/awards']"
+                   [colspan]="1"
+                   [rowspan]="2"
+                   [style.background]="'#ACBDE5'">Awards</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/people']"
+                   [colspan]="1"
+                   [rowspan]="3"
+                   [style.background]="'#ACBDE5'">People</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/films']"
+                   [colspan]="2"
+                   [rowspan]="3"
+                   [style.background]="'#ACBDE5'">Films</mat-grid-tile>
+  </mat-grid-list>
 </div>
