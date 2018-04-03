@@ -1,4 +1,4 @@
-export class Genres {
-  public id?: number;
-  public title: string;
+export interface Genres {
+  id?: number;
+  title: string;
 }

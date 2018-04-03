@@ -9,7 +9,7 @@ import {
   MatButtonModule,
   MatFormFieldModule,
   MatGridListModule,
-  MatInputModule,
+  MatInputModule, MatPaginatorModule, MatProgressSpinnerModule, MatSortModule, MatTableModule,
   MatToolbarModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -47,7 +47,11 @@ import { ToastrModule } from 'ngx-toastr';
     MatToolbarModule,
     MatGridListModule,
     FormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent

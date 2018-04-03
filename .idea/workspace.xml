@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="de450367-7662-4041-a5ff-6d8ddc145144" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/share/model/genres.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/share/model/genres.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/share/service/genres.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/share/service/genres.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -75,8 +78,8 @@
       <file leaf-file-name="GenreServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+            <state relative-caret-position="496">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#728#729#0" expanded="true" />
@@ -928,16 +931,15 @@
       <workItem from="1522679697500" duration="301000" />
       <workItem from="1522680036714" duration="150000" />
       <workItem from="1522680211670" duration="24000" />
-      <workItem from="1522680258322" duration="7539000" />
+      <workItem from="1522680258322" duration="8290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30370000" />
+    <option name="totallyTimeSpent" value="31121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5057307" side_tool="true" weight="0.49197862" />
@@ -957,7 +959,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49426934" visible="true" weight="0.53743315" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49426934" weight="0.42914438" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49056605" visible="true" weight="0.2829513" />
@@ -1335,8 +1337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="496">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#728#729#0" expanded="true" />

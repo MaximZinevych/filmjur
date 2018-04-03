@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Genres} from '../model/genres.model';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Observable} from 'rxjs/Observable';
 
 @Injectable()
 export class GenresService {
@@ -19,11 +20,9 @@ export class GenresService {
     return this.http.post(this.url, JSON.stringify(genre), this.httpOptions);
   }
 
-  getGenresList() {
-    this.http.get<Genres[]>(this.url).toPromise().then(
-      data => {
-        this.genresList = data;
-      });
+  getGenresList(): Observable<Genres[]> {
+    return this.http.get<Genres[]>(this.url);
+
   }
 
   updateGenre(id: number, genre: Genres) {
