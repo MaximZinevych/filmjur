@@ -24,3 +24,17 @@ npm install --save @angular/animations
 ```
 yarn add @angular/animations
 ```
+## Toastr
+### [NPM](https://www.npmjs.com/get-npm)
+
+```
+npm install ngx-toastr --save
+```
+
+#### Then add it to your angular-cli.json
+```
+"styles": [
+  "styles.scss",
+  "../node_modules/ngx-toastr/toastr.css"
+]
+```
