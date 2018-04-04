@@ -43,6 +43,5 @@ export class GenresControlComponent implements OnInit {
           this.toastr.info('Genre "' + updatedName + '" has been updated successfully!', 'Genre Updated!');
         });
     }
-
   }
 }

@@ -15,10 +15,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Bean
-    public CountryService countryService(){
-        return new CountryServiceImpl();
-    }
+
 
     @Bean
     public FilmService filmService(){

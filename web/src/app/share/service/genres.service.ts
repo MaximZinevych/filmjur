@@ -12,7 +12,6 @@ export class GenresService {
   };
 
   selectedGenre: Genres;
-  genresList: Genres[];
 
   constructor(private http: HttpClient) { }
 
