@@ -76,6 +76,7 @@ public class CountryController {
         }
 
         currentCountry.setTitle(country.getTitle());
+        currentCountry.setCode(country.getCode());
         countryService.updateCountry(currentCountry);
         return new ResponseEntity<>(currentCountry, HttpStatus.OK);
     }
