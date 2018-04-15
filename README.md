@@ -38,3 +38,10 @@ npm install ngx-toastr --save
   "../node_modules/ngx-toastr/toastr.css"
 ]
 ```
+## Drag Scroll
+### [NPM](https://www.npmjs.com/get-npm)
+
+```
+npm install ngx-drag-scroll --save
+```
+
