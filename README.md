@@ -44,4 +44,9 @@ npm install ngx-toastr --save
 ```
 npm install ngx-drag-scroll --save
 ```
+## Collapsible
+### [NPM](https://www.npmjs.com/get-npm)
 
+```
+npm install --save @ng-bootstrap/ng-bootstrap
+```
