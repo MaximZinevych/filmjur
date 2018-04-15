@@ -1,29 +1,42 @@
 <div class="manage-list-container">
-  <mat-grid-list [gutterSize]="10" cols="3" rowHeight="100px">
-
-    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/genres']"
-      [colspan]="1"
-      [rowspan]="2"
-      [style.background]="'#ACBDE5'">Genres</mat-grid-tile>
-
-    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/countries']"
-                   [colspan]="1"
-                   [rowspan]="2"
-                   [style.background]="'#ACBDE5'">Countries</mat-grid-tile>
-
-    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/awards']"
-                   [colspan]="1"
-                   [rowspan]="2"
-                   [style.background]="'#ACBDE5'">Awards</mat-grid-tile>
-
-    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/people']"
-                   [colspan]="1"
-                   [rowspan]="3"
-                   [style.background]="'#ACBDE5'">People</mat-grid-tile>
+  <mat-grid-list [gutterSize]="10" cols="6" rowHeight="200px">
 
     <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/films']"
+      [colspan]="2"
+      [rowspan]="2"
+      [style.background]="'#ACBDE5'">Films</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/roles']"
                    [colspan]="2"
-                   [rowspan]="3"
-                   [style.background]="'#ACBDE5'">Films</mat-grid-tile>
+                   [rowspan]="1"
+                   [style.background]="'#ACBDE5'">Roles</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/production']"
+                   [colspan]="2"
+                   [rowspan]="1"
+                   [style.background]="'#ACBDE5'">Production companies</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/people']"
+                   [colspan]="2"
+                   [rowspan]="2"
+                   [style.background]="'#ACBDE5'">People</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/awards']"
+                   [colspan]="2"
+                   [rowspan]="1"
+                   [style.background]="'#ACBDE5'">Award</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/genres']"
+                   [colspan]="2"
+                   [rowspan]="1"
+                   [style.background]="'#ACBDE5'">Genre</mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/countries']"
+                   [colspan]="2"
+                   [rowspan]="1"
+                   [style.background]="'#ACBDE5'">Country</mat-grid-tile>
+
+
+
   </mat-grid-list>
 </div>

@@ -34,6 +34,8 @@ import { FilmsControlComponent } from './manage-page/films-container/films-contr
 import { FilmsListComponent } from './manage-page/films-container/films-list/films-list.component';
 import { PeopleControlComponent } from './manage-page/people-container/people-control/people-control.component';
 import { PeopleListComponent } from './manage-page/people-container/people-list/people-list.component';
+import { ProductionContainerComponent } from './manage-page/production-container/production-container.component';
+import { RolesContainerComponent } from './manage-page/roles-container/roles-container.component';
 
 
 @NgModule({
@@ -57,7 +59,9 @@ import { PeopleListComponent } from './manage-page/people-container/people-list/
     FilmsControlComponent,
     FilmsListComponent,
     PeopleControlComponent,
-    PeopleListComponent
+    PeopleListComponent,
+    ProductionContainerComponent,
+    RolesContainerComponent
   ],
   imports: [
     BrowserModule,
