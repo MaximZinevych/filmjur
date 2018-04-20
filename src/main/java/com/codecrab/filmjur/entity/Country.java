@@ -24,4 +24,13 @@ public class Country {
     @Column(name = "code")
     @ApiModelProperty(notes = "The code of the current country", required = true)
     private String code;
+
+    public Country(Long id){
+        this.setId(id);
+    }
+//
+//    @OneToOne(fetch = FetchType.LAZY,
+//        cascade = CascadeType.ALL,
+//        mappedBy = "country")
+//    private Award award;
 }
