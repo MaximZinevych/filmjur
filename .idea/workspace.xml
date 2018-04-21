@@ -2,38 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de450367-7662-4041-a5ff-6d8ddc145144" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/script/DATABSE.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/filmjur_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/filmjur_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/filmjur_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/filmjur_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.e8b94c0bb2a22b1c40dc.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.92e4f2c4718376d975e3.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-container.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-container.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-container.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-control/countries-control.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/countries-container/countries-list/countries-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-control/genres-control.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-control/genres-control.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-control/genres-control.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/genres-container/genres-list/genres-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/share/service/genres.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/share/service/genres.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/app.module.ts" afterPath="$PROJECT_DIR$/web/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/films-container/films-container.component.html" afterPath="$PROJECT_DIR$/web/src/app/manage-page/films-container/films-container.component.html" />
+      <change beforePath="$PROJECT_DIR$/web/src/app/manage-page/films-container/films-container.component.ts" afterPath="$PROJECT_DIR$/web/src/app/manage-page/films-container/films-container.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -73,12 +47,6 @@
                 <item name="filmjur" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="filmjur" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -91,6 +59,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="CountryController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,39 +71,14 @@
       </file>
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
+=======
+      <file leaf-file-name="AwardController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/AwardController.java">
+>>>>>>> origin/master
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenreService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="-254">
+              <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,47 +86,98 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="361">
+              <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenreRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="30" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+            <state relative-caret-position="-66">
+              <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
               <folding>
-                <element signature="method#findById#0;class#CountryServiceImpl#0" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#641#642#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Country.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
+      <file leaf-file-name="AwardServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/AwardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
+            <state relative-caret-position="141">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1297#1298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+=======
+      <file leaf-file-name="StorageService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/StorageService.java">
+>>>>>>> origin/master
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1387#1388#0" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerTimeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AwardService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/AwardService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -208,12 +203,12 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="F:\Programs\gradle-4.5" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\Maxim\.gradle\wrapper\dists\gradle-4.0-bin\3p92xsbhik5vmig8i90n16yxc\gradle-4.0" />
       </map>
     </option>
     <option name="myGradleVersions">
       <map>
-        <entry key="$PROJECT_DIR$" value="4.5" />
+        <entry key="$PROJECT_DIR$" value="4.0" />
       </map>
     </option>
     <option name="availableProjects">
@@ -435,9 +430,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3046107950704" />
+        <entry key="$PROJECT_DIR$" value="1524065302504" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="4147281959" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3620227907" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -475,149 +470,6 @@
               <option name="name" value="filmjur" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="F:/Programs/gradle-4.5/src/announce" />
-                  <option value="F:/Programs/gradle-4.5/src/antlr" />
-                  <option value="F:/Programs/gradle-4.5/src/base-services" />
-                  <option value="F:/Programs/gradle-4.5/src/base-services-groovy" />
-                  <option value="F:/Programs/gradle-4.5/src/build-cache" />
-                  <option value="F:/Programs/gradle-4.5/src/build-cache-http" />
-                  <option value="F:/Programs/gradle-4.5/src/build-comparison" />
-                  <option value="F:/Programs/gradle-4.5/src/build-init" />
-                  <option value="F:/Programs/gradle-4.5/src/build-option" />
-                  <option value="F:/Programs/gradle-4.5/src/cli" />
-                  <option value="F:/Programs/gradle-4.5/src/code-quality" />
-                  <option value="F:/Programs/gradle-4.5/src/composite-builds" />
-                  <option value="F:/Programs/gradle-4.5/src/core" />
-                  <option value="F:/Programs/gradle-4.5/src/core-api" />
-                  <option value="F:/Programs/gradle-4.5/src/dependency-management" />
-                  <option value="F:/Programs/gradle-4.5/src/diagnostics" />
-                  <option value="F:/Programs/gradle-4.5/src/ear" />
-                  <option value="F:/Programs/gradle-4.5/src/ide" />
-                  <option value="F:/Programs/gradle-4.5/src/ide-native" />
-                  <option value="F:/Programs/gradle-4.5/src/ide-play" />
-                  <option value="F:/Programs/gradle-4.5/src/installation-beacon" />
-                  <option value="F:/Programs/gradle-4.5/src/internal-android-performance-testing" />
-                  <option value="F:/Programs/gradle-4.5/src/internal-integ-testing" />
-                  <option value="F:/Programs/gradle-4.5/src/internal-performance-testing" />
-                  <option value="F:/Programs/gradle-4.5/src/internal-testing" />
-                  <option value="F:/Programs/gradle-4.5/src/ivy" />
-                  <option value="F:/Programs/gradle-4.5/src/jacoco" />
-                  <option value="F:/Programs/gradle-4.5/src/javascript" />
-                  <option value="F:/Programs/gradle-4.5/src/jvm-services" />
-                  <option value="F:/Programs/gradle-4.5/src/language-groovy" />
-                  <option value="F:/Programs/gradle-4.5/src/language-java" />
-                  <option value="F:/Programs/gradle-4.5/src/language-jvm" />
-                  <option value="F:/Programs/gradle-4.5/src/language-native" />
-                  <option value="F:/Programs/gradle-4.5/src/language-scala" />
-                  <option value="F:/Programs/gradle-4.5/src/launcher" />
-                  <option value="F:/Programs/gradle-4.5/src/logging" />
-                  <option value="F:/Programs/gradle-4.5/src/maven" />
-                  <option value="F:/Programs/gradle-4.5/src/messaging" />
-                  <option value="F:/Programs/gradle-4.5/src/model-core" />
-                  <option value="F:/Programs/gradle-4.5/src/model-groovy" />
-                  <option value="F:/Programs/gradle-4.5/src/native" />
-                  <option value="F:/Programs/gradle-4.5/src/osgi" />
-                  <option value="F:/Programs/gradle-4.5/src/persistent-cache" />
-                  <option value="F:/Programs/gradle-4.5/src/platform-base" />
-                  <option value="F:/Programs/gradle-4.5/src/platform-jvm" />
-                  <option value="F:/Programs/gradle-4.5/src/platform-native" />
-                  <option value="F:/Programs/gradle-4.5/src/platform-play" />
-                  <option value="F:/Programs/gradle-4.5/src/plugin-development" />
-                  <option value="F:/Programs/gradle-4.5/src/plugin-use" />
-                  <option value="F:/Programs/gradle-4.5/src/plugins" />
-                  <option value="F:/Programs/gradle-4.5/src/process-services" />
-                  <option value="F:/Programs/gradle-4.5/src/publish" />
-                  <option value="F:/Programs/gradle-4.5/src/reporting" />
-                  <option value="F:/Programs/gradle-4.5/src/resources" />
-                  <option value="F:/Programs/gradle-4.5/src/resources-gcs" />
-                  <option value="F:/Programs/gradle-4.5/src/resources-http" />
-                  <option value="F:/Programs/gradle-4.5/src/resources-s3" />
-                  <option value="F:/Programs/gradle-4.5/src/resources-sftp" />
-                  <option value="F:/Programs/gradle-4.5/src/scala" />
-                  <option value="F:/Programs/gradle-4.5/src/signing" />
-                  <option value="F:/Programs/gradle-4.5/src/test-kit" />
-                  <option value="F:/Programs/gradle-4.5/src/testing-base" />
-                  <option value="F:/Programs/gradle-4.5/src/testing-jvm" />
-                  <option value="F:/Programs/gradle-4.5/src/testing-native" />
-                  <option value="F:/Programs/gradle-4.5/src/tooling-api" />
-                  <option value="F:/Programs/gradle-4.5/src/tooling-api-builders" />
-                  <option value="F:/Programs/gradle-4.5/src/version-control" />
-                  <option value="F:/Programs/gradle-4.5/src/workers" />
-                  <option value="F:/Programs/gradle-4.5/src/wrapper" />
-                  <option value="F:/Programs/gradle-4.5/lib/ant-1.9.9.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/ant-launcher-1.9.9.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-base-services-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-base-services-groovy-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-build-cache-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-build-option-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-cli-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-core-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-core-api-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-docs-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-installation-beacon-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-jvm-services-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-kotlin-dsl-0.14.2.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-kotlin-dsl-tooling-builders-0.14.2.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-kotlin-dsl-tooling-models-0.14.2.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-launcher-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-logging-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-messaging-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-model-core-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-model-groovy-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-native-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-persistent-cache-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-process-services-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-resources-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-runtime-api-info-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-tooling-api-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/gradle-wrapper-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/groovy-all-2.4.12.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-announce-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-antlr-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-build-cache-http-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-build-comparison-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-build-init-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-code-quality-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-composite-builds-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-dependency-management-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-diagnostics-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-ear-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-ide-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-ide-native-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-ide-play-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-ivy-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-jacoco-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-javascript-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-language-groovy-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-language-java-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-language-jvm-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-language-native-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-language-scala-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-maven-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-osgi-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-platform-base-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-platform-jvm-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-platform-native-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-platform-play-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-plugin-development-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-plugin-use-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-plugins-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-publish-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-reporting-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-resources-gcs-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-resources-http-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-resources-s3-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-resources-sftp-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-scala-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-signing-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-test-kit-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-testing-base-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-testing-jvm-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-testing-native-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-tooling-api-builders-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-version-control-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/gradle-workers-4.5.jar" />
-                  <option value="F:/Programs/gradle-4.5/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -643,22 +495,33 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Hello.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/RequestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/ICountryService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/LocalTimeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/config/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Film.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/AwardRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Award.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/dto/AwardDto.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/AwardServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/AwardService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/dto/AwardRequestDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/dto/AwardResponseDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/AwardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/StorageService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/UploadController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -671,7 +534,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/web/node_modules" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+>>>>>>> origin/master
     <option name="x" value="136" />
     <option name="y" value="-8" />
     <option name="width" value="1438" />
@@ -681,7 +548,17 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -732,7 +609,40 @@
               <item name="filmjur" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+<<<<<<< HEAD
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="filmjur" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="filmjur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="filmjur" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="filmjur" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="filmjur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="filmjur" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="filmjur" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="filmjur" type="b2602c69:ProjectViewProjectNode" />
+              <item name="filmjur" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="filmjur" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="filmjur" type="b2602c69:ProjectViewProjectNode" />
@@ -740,7 +650,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -749,6 +658,9 @@
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -763,8 +675,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -793,9 +705,21 @@
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
+      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
     </configuration>
     <configuration name="filmjur [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -813,6 +737,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration name="filmjur [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -830,8 +755,11 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -841,17 +769,30 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
+      <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="filmjur_main" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.codecrab.filmjur.Application" />
+      <module name="filmjur_main" />
+      <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -864,21 +805,17 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
+      <envs />
       <properties />
       <listeners />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -886,17 +823,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list>
-      <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Gradle.filmjur [clean]" />
-      <item itemvalue="Gradle.filmjur [build]" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.filmjur [clean]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.filmjur [build]" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.filmjur [build]" />
-        <item itemvalue="Gradle.filmjur [clean]" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.filmjur [build]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.filmjur [clean]" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES" />
@@ -930,18 +870,29 @@
       <workItem from="1522784990793" duration="6681000" />
       <workItem from="1522826842723" duration="42000" />
       <workItem from="1523054074827" duration="593000" />
+<<<<<<< HEAD
       <workItem from="1523792242752" duration="672000" />
       <workItem from="1523795200492" duration="289000" />
       <workItem from="1524318618630" duration="4000" />
+=======
+      <workItem from="1523887493872" duration="4265000" />
+      <workItem from="1523898816553" duration="965000" />
+      <workItem from="1524057134197" duration="20145000" />
+>>>>>>> origin/master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="42487000" />
+=======
+    <option name="totallyTimeSpent" value="66897000" />
+>>>>>>> origin/master
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
     <layout>
+<<<<<<< HEAD
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -976,6 +927,42 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+=======
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49190938" sideWeight="0.5057307" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47866666" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.295764" sideWeight="0.5339806" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39066666" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29733333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34933335" sideWeight="0.49426934" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22172236" sideWeight="0.46601942" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.260745" sideWeight="0.5115607" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15938303" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2743553" sideWeight="0.5066845" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> origin/master
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -986,156 +973,78 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="19" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/ICountryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/ICountryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+          <caret line="4" column="58" lean-forward="false" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1146,155 +1055,301 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/config/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/util/CustomErrorType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/FilmService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/FilmServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.0.5.RELEASE/8380157b984eee5852240c8d9a45f72f1fc45f39/spring-data-jpa-2.0.5.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.0.Final/33fbaa7276b774ef0925f541640f6ff23fbc62dc/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/NamedQuery.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/ProductionCompany.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="52" column="5" selection-start-line="24" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+          <caret line="52" column="5" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/GenreController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
-          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <caret line="85" column="29" lean-forward="false" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ProductionCompanyController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/FilmController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="method#findById#0;class#CountryServiceImpl#0" />
-          </folding>
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Genre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="89" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="89" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="77" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/GenreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/GenreRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Film.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/CountryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="4" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/CountryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="35" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/repository/AwardRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/FilmServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/FilmService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#1306#1307#0" expanded="false" />
+            <element signature="e#1368#1369#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/dto/AwardRequestDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Award.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/2fbf13b190d2b64c44f4235ff24038a1215cbf2d/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/entity/Country.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="e#942#943#0" expanded="false" />
+            <element signature="e#972#973#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/dto/AwardResponseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/CountryService.java">
+=======
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="110" column="17" lean-forward="false" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/AwardService.java">
+>>>>>>> origin/master
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/AwardServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/ServerTimeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="3" column="52" lean-forward="false" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding>
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload-dir/Leaf Curl.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="361">
+          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/AwardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/controller/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codecrab/filmjur/service/StorageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="23" column="71" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -36,8 +36,15 @@ import { PeopleControlComponent } from './manage-page/people-container/people-co
 import { PeopleListComponent } from './manage-page/people-container/people-list/people-list.component';
 import { ProductionContainerComponent } from './manage-page/production-container/production-container.component';
 import { RolesContainerComponent } from './manage-page/roles-container/roles-container.component';
+<<<<<<< HEAD
 import {DragScrollModule} from 'ngx-drag-scroll';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+=======
+import { DetailsUploadComponent } from './shared-components/details-upload/details-upload.component';
+import { FormUploadComponent } from './shared-components/form-upload/form-upload.component';
+import { ListUploadComponent } from './shared-components/list-upload/list-upload.component';
+import {UploadFileService} from './share/service/upload-file.service';
+>>>>>>> origin/master
 
 
 @NgModule({
@@ -63,7 +70,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     PeopleControlComponent,
     PeopleListComponent,
     ProductionContainerComponent,
-    RolesContainerComponent
+    RolesContainerComponent,
+    DetailsUploadComponent,
+    FormUploadComponent,
+    ListUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +95,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     DragScrollModule,
     NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [UploadFileService],
   bootstrap: [AppComponent
   ]
 })
