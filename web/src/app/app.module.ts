@@ -36,6 +36,8 @@ import { PeopleControlComponent } from './manage-page/people-container/people-co
 import { PeopleListComponent } from './manage-page/people-container/people-list/people-list.component';
 import { ProductionContainerComponent } from './manage-page/production-container/production-container.component';
 import { RolesContainerComponent } from './manage-page/roles-container/roles-container.component';
+import {DragScrollModule} from 'ngx-drag-scroll';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -79,7 +81,9 @@ import { RolesContainerComponent } from './manage-page/roles-container/roles-con
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    DragScrollModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent

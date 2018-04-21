@@ -1,5 +1,29 @@
-<div>
-  <p style="color: red;">lormem</p>
-  <p>lormem</p>
-  <p>lormem</p>
+<div class="content">
+
+  <div class="demo-border">
+    <div class="demo-one"
+         dragScroll
+         drag-scroll-y-disabled="true"
+         scrollbar-hidden="true"
+         (reachesLeftBound)="leftBoundStat($event)"
+         (reachesRightBound)="rightBoundStat($event)"
+         #nav>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+      <img [src]="'assets/images/dashboard/luke.png'"/>
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="center center">
+    <button mat-raised-button color="primary" [disabled]="leftNavDisabled" (click)="moveLeft()">left</button>
+    <button mat-raised-button color="primary" [disabled]="rightNavDisabled" (click)="moveRight()">right</button>
+  </div>
+
 </div>
