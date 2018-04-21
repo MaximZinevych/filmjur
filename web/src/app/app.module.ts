@@ -36,6 +36,10 @@ import { PeopleControlComponent } from './manage-page/people-container/people-co
 import { PeopleListComponent } from './manage-page/people-container/people-list/people-list.component';
 import { ProductionContainerComponent } from './manage-page/production-container/production-container.component';
 import { RolesContainerComponent } from './manage-page/roles-container/roles-container.component';
+import { DetailsUploadComponent } from './shared-components/details-upload/details-upload.component';
+import { FormUploadComponent } from './shared-components/form-upload/form-upload.component';
+import { ListUploadComponent } from './shared-components/list-upload/list-upload.component';
+import {UploadFileService} from './share/service/upload-file.service';
 
 
 @NgModule({
@@ -61,7 +65,10 @@ import { RolesContainerComponent } from './manage-page/roles-container/roles-con
     PeopleControlComponent,
     PeopleListComponent,
     ProductionContainerComponent,
-    RolesContainerComponent
+    RolesContainerComponent,
+    DetailsUploadComponent,
+    FormUploadComponent,
+    ListUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -81,7 +88,7 @@ import { RolesContainerComponent } from './manage-page/roles-container/roles-con
     MatSortModule,
     MatProgressSpinnerModule
   ],
-  providers: [],
+  providers: [UploadFileService],
   bootstrap: [AppComponent
   ]
 })

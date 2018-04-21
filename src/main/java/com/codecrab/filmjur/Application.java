@@ -14,8 +14,6 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-
-
     @Bean
     public FilmService filmService(){
         return new FilmServiceImpl();
@@ -25,6 +23,4 @@ public class Application {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
-
-
 }
