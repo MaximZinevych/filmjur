@@ -7,8 +7,7 @@ import {Country} from '../../../share/model/country.model';
 @Component({
   selector: 'app-countries-list',
   templateUrl: './countries-list.component.html',
-  styleUrls: ['./countries-list.component.css'],
-  providers: [CountryService]
+  styleUrls: ['./countries-list.component.css']
 })
 export class CountriesListComponent implements OnInit {
 
@@ -43,11 +42,13 @@ export class CountriesListComponent implements OnInit {
 
 
   showForEdit(country: Country) {
+    console.log(this.countryService.selectedCountry);
     this.countryService.selectedCountry = Object.assign({}, country);
+    console.log(this.countryService.selectedCountry);
   }
 
   onDelete(id: number) {
-    if (confirm('Are you sure ?') == true) {
+    if (confirm('Are you sure ?') === true) {
       this.countryService.deleteCountry(id)
         .subscribe(x => {
           this.toastr.warning('Deleted successfully!', 'Country deleted!');
@@ -57,10 +58,6 @@ export class CountriesListComponent implements OnInit {
   }
 
   refresh() {
-    this.countryService.getCountriesList().subscribe((res) => {
-      this.dataSource = new MatTableDataSource(res);
-      this.changeDetectorRefs.detectChanges();
-    });
-
+    this.ngOnInit();
   }
 }

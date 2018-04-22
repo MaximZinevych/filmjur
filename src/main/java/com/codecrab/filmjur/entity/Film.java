@@ -1,5 +1,6 @@
 package com.codecrab.filmjur.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,6 +9,8 @@ import java.util.Date;
 
 @Data @NoArgsConstructor
 @Entity @Table(schema = "film", name = "film")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@NamedQuery(name = "Film.findAllOrderBy", query = "SELECT f FROM Film f ORDER BY f.id")
 public class Film{
 
     @Id @Column(name = "id")

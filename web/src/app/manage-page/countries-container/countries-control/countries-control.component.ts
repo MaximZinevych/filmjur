@@ -6,8 +6,7 @@ import {NgForm} from '@angular/forms';
 @Component({
   selector: 'app-countries-control',
   templateUrl: './countries-control.component.html',
-  styleUrls: ['./countries-control.component.css'],
-  providers: [CountryService]
+  styleUrls: ['./countries-control.component.css']
 })
 export class CountriesControlComponent implements OnInit {
 
@@ -45,5 +44,4 @@ export class CountriesControlComponent implements OnInit {
         });
     }
   }
-
 }

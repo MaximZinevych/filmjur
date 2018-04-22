@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagePageComponent implements OnInit {
 
+  path = '../../assets/images/title/';
+
   tiles = [
-    {text: 'One', cols: 1, rows: 1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 1, rows: 2, color: '#DDBDF1'},
-    {text: 'Five', cols: 2, rows: 2, color: '#313c6a'},
+    {cols: 2, rows: 2, image: 'films_title.svg', route: 'films'},
+    {cols: 2, rows: 1, image: 'roles_title.svg', route: 'roles'},
+    {cols: 2, rows: 1, image: 'production_companies_title.svg', route: 'production'},
+    {cols: 2, rows: 2, image: 'people_title.svg', route: 'people'},
+    {cols: 2, rows: 1, image: 'awards_title.svg', route: 'awards'},
+    {cols: 2, rows: 1, image: 'genres_title.svg', route: 'genres'},
+    {cols: 2, rows: 1, image: 'countries_title.svg', route: 'countries'}
   ];
 
   constructor() { }

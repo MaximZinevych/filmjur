@@ -46,10 +46,9 @@ export class GenresListComponent implements OnInit {
   }
 
   onDelete(id: number) {
-    if (confirm('Are you sure ?') == true) {
+    if (confirm('Are you sure ?') === true) {
       this.genresService.deleteGenre(id)
         .subscribe(x => {
-          //this.genresService.getGenresList();
           this.toastr.warning('Deleted successfully!', 'Genre deleted!');
           this.refresh();
         });

@@ -12,7 +12,6 @@ export class GenresContainerComponent implements OnInit {
   constructor(private genresService: GenresService) { }
 
   ngOnInit() {
-
   }
 
 }

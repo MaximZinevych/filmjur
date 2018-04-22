@@ -20,7 +20,7 @@ public class Award {
     
     private String title;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country")
     private Country country;
 

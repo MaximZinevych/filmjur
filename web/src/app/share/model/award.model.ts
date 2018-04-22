@@ -1,5 +1,7 @@
-export class Award {
+import {Country} from './country.model';
+
+export interface Award {
   id?: number;
   title: string;
-  country: number;
+  country?: Country;
 }

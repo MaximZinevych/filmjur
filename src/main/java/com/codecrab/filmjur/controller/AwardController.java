@@ -39,20 +39,19 @@ public class AwardController {
     @Autowired
     CountryService countryService;
 
-
     @RequestMapping(value = "/awards/", method = RequestMethod.GET)
-    public ResponseEntity<List<AwardResponseDto>> getAwards(){
+    public ResponseEntity<List<Award>> getAwards(){
         logger.info("Fetching all awards.");
         List<Award> awards = awardService.findAllAwards();
-        List<AwardResponseDto> awardResponseDtos = new ArrayList<>();
-        for (Award award : awards){
-            awardResponseDtos.add(convertToDto(award));
-        }
+//        List<AwardResponseDto> awardResponseDtos = new ArrayList<>();
+//        for (Award award : awards){
+//            awardResponseDtos.add(convertToDto(award));
+//        }
         if(awards.isEmpty()){
             logger.error("No award has been found.");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(awardResponseDtos, HttpStatus.OK);
+        return new ResponseEntity<>(awards, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/awards/{id}", method = RequestMethod.GET)
@@ -68,18 +67,18 @@ public class AwardController {
                     + " not found."), HttpStatus.NOT_FOUND);
         }
 
-        AwardResponseDto awardDto = convertToDto(award);
-        return new ResponseEntity<>(awardDto, HttpStatus.OK);
+//        AwardResponseDto awardDto = convertToDto(award);
+        return new ResponseEntity<>(award, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/awards/", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<?> addAward(@RequestBody AwardRequestDto award, UriComponentsBuilder ucBuilder){
+    public ResponseEntity<?> addAward(@RequestBody Award award, UriComponentsBuilder ucBuilder){
         logger.info("Adding award : {}", award);
 
         Award local = new Award();
 
         local.setTitle(award.getTitle());
-        local.setCountry(countryService.findById(award.getCountry()));
+        local.setCountry(countryService.findById(award.getCountry().getId()));
 
 
         if(awardService.isAwardExist(local)){
@@ -95,7 +94,7 @@ public class AwardController {
     }
 
     @RequestMapping(value = "/awards/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<?> updateAward(@PathVariable("id") long id, @RequestBody AwardRequestDto award){
+    public ResponseEntity<?> updateAward(@PathVariable("id") long id, @RequestBody Award award){
         logger.info("Updating award with id {}", id);
 
         Award currentAward = awardService.findById(id);
@@ -107,7 +106,7 @@ public class AwardController {
         }
 
         currentAward.setTitle(award.getTitle());
-        currentAward.setCountry(countryService.findById(award.getCountry()));
+        currentAward.setCountry(countryService.findById(award.getId()));
         awardService.updateAward(currentAward);
         return new ResponseEntity<>(currentAward, HttpStatus.OK);
     }
@@ -127,11 +126,11 @@ public class AwardController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    private AwardResponseDto convertToDto(Award award){
-        AwardResponseDto dto = modelMapper.map(award, AwardResponseDto.class);
-        if(award.getCountry() != null){
-            dto.setCountry(Optional.of(award.getCountry().getTitle()));
-        }
-        return dto;
-    }
+//    private AwardResponseDto convertToDto(Award award){
+//        AwardResponseDto dto = modelMapper.map(award, AwardResponseDto.class);
+//        if(award.getCountry() != null){
+//            dto.setCountry(Optional.of(award.getCountry().getTitle()));
+//        }
+//        return dto;
+//    }
 }

@@ -20,6 +20,7 @@ public class ProductionCompany{
     @Column(name = "title")
     private String title;
 
-    @Column(name = "country")
-    private Long country;
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "country")
+    private Country country;
 }

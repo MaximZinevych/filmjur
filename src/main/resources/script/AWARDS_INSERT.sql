@@ -1,0 +1,12 @@
+INSERT INTO misc.award(title, country) VALUES ('Argentine Academy of Cinematography Arts and Sciences Award', 10);
+INSERT INTO misc.award(title, country) VALUES ('Argentine Film Critics Association Award', 10);
+INSERT INTO misc.award(title, country) VALUES ('Clarín Award', 10);
+INSERT INTO misc.award(title, country) VALUES ('Konex Award', 10);
+INSERT INTO misc.award(title, country) VALUES ('Australian Film Critics Association', 13);
+INSERT INTO misc.award(title, country) VALUES ('Film Critics Circle of Australia', 13);
+INSERT INTO misc.award(title, country) VALUES ('National Film Award', 18);
+INSERT INTO misc.award(title, country) VALUES ('Meril Prothom Alo Award', 18);
+INSERT INTO misc.award(title, country) VALUES ('Belgian Film Critics Association', 21);
+INSERT INTO misc.award(title, country) VALUES ('Festival de Gramado', 30);
+INSERT INTO misc.award(title, country) VALUES ('Troféu Vento norte', 30);
+INSERT INTO misc.award(title, country) VALUES ('German Film Critics Association Awards', 80);
