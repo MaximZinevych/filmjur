@@ -1,6 +1,7 @@
 package com.codecrab.filmjur.controller;
 
 import com.codecrab.filmjur.entity.ProductionCompany;
+import com.codecrab.filmjur.service.CountryService;
 import com.codecrab.filmjur.service.ProductionCompanyService;
 import com.codecrab.filmjur.util.CustomErrorType;
 import org.slf4j.Logger;
@@ -22,6 +23,8 @@ public class ProductionCompanyController {
 
     @Autowired
     ProductionCompanyService productionCompanyService;
+    @Autowired
+    CountryService countryService;
 
     @RequestMapping(value = "/production/company/", method = RequestMethod.GET)
     public ResponseEntity<List<ProductionCompany>> listAllProductionCompanies(){
@@ -51,13 +54,19 @@ public class ProductionCompanyController {
                                                   UriComponentsBuilder ucBuilder){
         logger.info("Adding production company : {}", productionCompany);
 
-        if(productionCompanyService.isProductionCompanyExist(productionCompany)){
+        ProductionCompany local = new ProductionCompany();
+
+        local.setTitle(productionCompany.getTitle());
+        local.setCountry(countryService.findById(productionCompany.getCountry().getId()));
+
+
+        if(productionCompanyService.isProductionCompanyExist(local)){
             logger.error("Unable to add production company. A production company with title {} already exists"
                     , productionCompany.getTitle());
             return new ResponseEntity<>(new CustomErrorType("Unable to add. Genre with title "
                     + productionCompany.getTitle() + " already exists."), HttpStatus.CONFLICT);
         }
-        productionCompanyService.saveProductionCompany(productionCompany);
+        productionCompanyService.saveProductionCompany(local);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/production/company/{id}")

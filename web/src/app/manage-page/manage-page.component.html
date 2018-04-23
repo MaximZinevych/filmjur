@@ -1,58 +1,6 @@
 <div class="manage-list-container">
   <mat-grid-list [gutterSize]="10" cols="6" rowHeight="200px">
 
-    <!--<mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/films']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="2"-->
-                   <!--[style.backgroundImage]="'url('+ films +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'"></mat-grid-tile>-->
-
-    <!--<mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/roles']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="1"-->
-                   <!--[style.backgroundImage]="'url('+ roles +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'">-->
-    <!--</mat-grid-tile>-->
-
-    <!--<mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/production']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="1"-->
-                   <!--[style.backgroundImage]="'url('+ production +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'"></mat-grid-tile>-->
-
-    <!--<mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/people']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="2"-->
-                   <!--[style.backgroundImage]="'url('+ people +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'">-->
-    <!--</mat-grid-tile>-->
-
-    <!--<mat-grid-tile class="grid-tile-container awards" [routerLink]="['/manage/awards']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="1"-->
-                   <!--[style.backgroundImage]="'url('+ awards +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'"></mat-grid-tile>-->
-
-    <!--<mat-grid-tile class="grid-tile-container genres" [routerLink]="['/manage/genres']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="1"-->
-                   <!--[style.backgroundImage]="'url('+ genre +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'"></mat-grid-tile>-->
-
-    <!--<mat-grid-tile class="grid-tile-container" [routerLink]="['/manage/countries']"-->
-                   <!--[colspan]="2"-->
-                   <!--[rowspan]="1"-->
-                   <!--[style.backgroundImage]="'url('+ countries +')'"-->
-                   <!--[style.backgroundRepeat]="'no-repeat'"-->
-                   <!--[style.backgroundPosition]="'center'">-->
-    <!--</mat-grid-tile>-->
-
     <mat-grid-tile
       *ngFor="let tile of tiles"
       [colspan]="tile.cols"

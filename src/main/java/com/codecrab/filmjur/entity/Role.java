@@ -6,21 +6,19 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Data @NoArgsConstructor
+@Data
+@NoArgsConstructor
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-@NamedQuery(name = "ProductionCompany.findAllOrderBy", query = "SELECT pc FROM ProductionCompany pc ORDER BY pc.id")
-@Table(schema = "production", name = "production_company")
-public class ProductionCompany{
+@NamedQuery(name = "Role.findAllOrderBy", query = "SELECT r FROM Role r ORDER BY r.id")
+@Table(schema = "staff", name = "role")
+public class Role{
 
-    @Id @Column(name = "id")
+    @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "title")
     private String title;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "country")
-    private Country country;
 }

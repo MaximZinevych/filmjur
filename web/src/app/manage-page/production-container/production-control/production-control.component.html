@@ -1,0 +1,39 @@
+<div class="col-md-12">
+  <form class="company-form" #companyForm="ngForm" (ngSubmit)="onSubmit(companyForm)">
+
+    <input type="hidden" #id="ngModel" name="id"  [(ngModel)]="companyService.selectedCompany.id">
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <mat-form-field>
+          <input class="form-control" matInput placeholder="Production Company Title" required
+                 name="title" #title="ngModel" [(ngModel)]="companyService.selectedCompany.title">
+        </mat-form-field>
+        <div class="validation-error" *ngIf="title.invalid && title.touched">This field is required.</div>
+      </div>
+      <div class="form-group col-md-6">
+        <mat-form-field>
+          <mat-select placeholder="Country" name="country" required
+                      [(ngModel)]="companyService.selectedCompany.country">
+            <mat-option *ngFor="let country of countries" [value]="country">{{country.title}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="form-group col-md-6">
+        <button [disabled]="!companyForm.valid" type="submit" mat-raised-button color="primary">
+          <i class="fa fa-floppy-o"></i> Submit
+        </button>
+      </div>
+      <div class="form-group col-md-6">
+        <button type="button" mat-raised-button color="accent" (click)="resetForm(companyForm)">
+          <i class="fa fa-repeat"></i> Reset
+        </button>
+      </div>
+    </div>
+
+  </form>
+</div>
+
+
+
+

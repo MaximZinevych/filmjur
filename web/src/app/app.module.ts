@@ -43,6 +43,10 @@ import { FormUploadComponent } from './shared-components/form-upload/form-upload
 import { ListUploadComponent } from './shared-components/list-upload/list-upload.component';
 import {UploadFileService} from './share/service/upload-file.service';
 import {AwardsService} from './share/service/awards.service';
+import { ProductionControlComponent } from './manage-page/production-container/production-control/production-control.component';
+import { ProductionListComponent } from './manage-page/production-container/production-list/production-list.component';
+import { RolesListComponent } from './manage-page/roles-container/roles-list/roles-list.component';
+import { RolesControlComponent } from './manage-page/roles-container/roles-control/roles-control.component';
 
 
 @NgModule({
@@ -71,7 +75,11 @@ import {AwardsService} from './share/service/awards.service';
     RolesContainerComponent,
     DetailsUploadComponent,
     FormUploadComponent,
-    ListUploadComponent
+    ListUploadComponent,
+    ProductionControlComponent,
+    ProductionListComponent,
+    RolesListComponent,
+    RolesControlComponent
   ],
   imports: [
     BrowserModule,
