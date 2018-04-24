@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data @NoArgsConstructor
 @Entity
@@ -14,9 +16,13 @@ import java.io.Serializable;
 @NamedQuery(name = "Genre.findAllOrderBy", query = "SELECT g FROM Genre g ORDER BY g.id")
 public class Genre implements Serializable {
 
-    @Id
+    @Id @Column(name = "genre_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
+
+
+    @ManyToMany(mappedBy = "genres")
+    private Set<Film> films = new HashSet<>();
 }
