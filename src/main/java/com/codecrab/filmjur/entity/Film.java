@@ -6,9 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.util.*;
 
 @Data @NoArgsConstructor
 @Entity @Table(schema = "film", name = "film")
@@ -33,14 +33,33 @@ public class Film{
     private short runningTime;
 
     @Column(name = "release_date")
-    private short releaseDate;
+    private LocalDate releaseDate;
 
 
-    @ManyToMany
-    @JsonIgnore
-    @JoinTable(schema = "film",
-            name = "film_genre",
-            joinColumns = {@JoinColumn(name = "film_id")},
-            inverseJoinColumns = {@JoinColumn(name = "genre_id")})
-    private Set<Genre> genres = new HashSet<>();
+
+    @OneToMany
+    @JoinTable(name = "film_genre", schema = "film",
+            joinColumns = @JoinColumn(name = "film_id"),
+            inverseJoinColumns = @JoinColumn(name = "genre_id"))
+    private List<Genre> genres = new LinkedList<>();
+
+    @OneToMany
+    @JoinTable(name = "film_company", schema = "film",
+            joinColumns = @JoinColumn(name = "film_id"),
+            inverseJoinColumns = @JoinColumn(name = "company_id"))
+    private List<Company> companies = new LinkedList<>();
+
+    @OneToMany
+    @JoinTable(name = "film_faward", schema = "film",
+            joinColumns = @JoinColumn(name = "film_id"),
+            inverseJoinColumns = @JoinColumn(name = "faward_id"))
+    private List<FAward> fawards = new LinkedList<>();
+
+    @OneToMany
+    @JoinTable(name = "film_human_role", schema = "film",
+            joinColumns = @JoinColumn(name = "film_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private List<Role> roles = new LinkedList<>();
+
+
 }

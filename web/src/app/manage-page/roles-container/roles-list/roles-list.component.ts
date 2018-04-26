@@ -19,7 +19,7 @@ export class RolesListComponent implements OnInit {
               private changeDetectorRefs: ChangeDetectorRef) { }
 
   dataSource;
-  displayedColumns = ['id', 'title', 'action'];
+  displayedColumns = ['id', 'description', 'action'];
 
 
   ngOnInit() {

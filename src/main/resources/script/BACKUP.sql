@@ -231,17 +231,17 @@ CREATE VIEW film.v_film AS
 ALTER TABLE film.v_film OWNER TO postgres;
 
 --
--- Name: award; Type: TABLE; Schema: misc; Owner: postgres
+-- Name: HAward; Type: TABLE; Schema: misc; Owner: postgres
 --
 
-CREATE TABLE misc.award (
+CREATE TABLE misc.HAward (
     id bigint NOT NULL,
     title character varying(96) NOT NULL,
     country bigint
 );
 
 
-ALTER TABLE misc.award OWNER TO postgres;
+ALTER TABLE misc.HAward OWNER TO postgres;
 
 --
 -- Name: award_id_seq; Type: SEQUENCE; Schema: misc; Owner: postgres
@@ -261,7 +261,7 @@ ALTER TABLE misc.award_id_seq OWNER TO postgres;
 -- Name: award_id_seq; Type: SEQUENCE OWNED BY; Schema: misc; Owner: postgres
 --
 
-ALTER SEQUENCE misc.award_id_seq OWNED BY misc.award.id;
+ALTER SEQUENCE misc.award_id_seq OWNED BY misc.HAward.id;
 
 
 --
@@ -479,10 +479,10 @@ ALTER TABLE ONLY film.genre ALTER COLUMN id SET DEFAULT nextval('film.genre_id_s
 
 
 --
--- Name: award id; Type: DEFAULT; Schema: misc; Owner: postgres
+-- Name: HAward id; Type: DEFAULT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.award ALTER COLUMN id SET DEFAULT nextval('misc.award_id_seq'::regclass);
+ALTER TABLE ONLY misc.HAward ALTER COLUMN id SET DEFAULT nextval('misc.award_id_seq'::regclass);
 
 
 --
@@ -592,10 +592,10 @@ COPY film.genre (id, title) FROM stdin;
 
 
 --
--- Data for Name: award; Type: TABLE DATA; Schema: misc; Owner: postgres
+-- Data for Name: HAward; Type: TABLE DATA; Schema: misc; Owner: postgres
 --
 
-COPY misc.award (id, title, country) FROM stdin;
+COPY misc.HAward (id, title, country) FROM stdin;
 7	Emmie Award	173
 \.
 
@@ -1014,10 +1014,10 @@ ALTER TABLE ONLY film.genre
 
 
 --
--- Name: award award_pkey; Type: CONSTRAINT; Schema: misc; Owner: postgres
+-- Name: HAward award_pkey; Type: CONSTRAINT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.award
+ALTER TABLE ONLY misc.HAward
     ADD CONSTRAINT award_pkey PRIMARY KEY (id);
 
 
@@ -1142,10 +1142,10 @@ ALTER TABLE ONLY film.film_production_company
 
 
 --
--- Name: award award_country_fkey; Type: FK CONSTRAINT; Schema: misc; Owner: postgres
+-- Name: HAward award_country_fkey; Type: FK CONSTRAINT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.award
+ALTER TABLE ONLY misc.HAward
     ADD CONSTRAINT award_country_fkey FOREIGN KEY (country) REFERENCES zoning.country(id) ON DELETE SET NULL;
 
 
@@ -1162,7 +1162,7 @@ ALTER TABLE ONLY production.production_company
 --
 
 ALTER TABLE ONLY staff.human_award
-    ADD CONSTRAINT human_award_award_id_fkey FOREIGN KEY (award_id) REFERENCES misc.award(id);
+    ADD CONSTRAINT human_award_award_id_fkey FOREIGN KEY (award_id) REFERENCES misc.HAward(id);
 
 
 --

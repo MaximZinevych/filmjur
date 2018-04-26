@@ -5,6 +5,7 @@ import com.codecrab.filmjur.repository.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @Service("filmService")
@@ -28,6 +29,8 @@ public class FilmServiceImpl implements FilmService {
         filmRepository.save(film);
     }
 
+
+
     @Override
     public void updateFilm(Film film) {
         filmRepository.save(film);
@@ -40,7 +43,11 @@ public class FilmServiceImpl implements FilmService {
 
     @Override
     public List<Film> findAllFilms() {
-        return filmRepository.findAllOrderBy();
+        List<Film> films = new LinkedList<>();
+        for(Film film:filmRepository.findAll()){
+            films.add(film);
+        }
+        return films;
     }
 
     @Override

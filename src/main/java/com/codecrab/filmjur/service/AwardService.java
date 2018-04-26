@@ -1,15 +1,15 @@
 package com.codecrab.filmjur.service;
 
-import com.codecrab.filmjur.entity.Award;
+import com.codecrab.filmjur.entity.HAward;
 
 import java.util.List;
 
 public interface AwardService {
-    Award findById(Long id);
-    Award findByTitle(String title);
-    void saveAward(Award award);
-    void updateAward(Award award);
+    HAward findById(Long id);
+    HAward findByTitle(String title);
+    void saveAward(HAward HAward);
+    void updateAward(HAward HAward);
     void deleteAwardById(Long id);
-    List<Award> findAllAwards();
-    boolean isAwardExist(Award award);
+    List<HAward> findAllAwards();
+    boolean isAwardExist(HAward HAward);
 }

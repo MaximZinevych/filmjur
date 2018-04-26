@@ -2,15 +2,13 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.8
--- Dumped by pg_dump version 9.6.8
+-- Dumped from database version 9.5.12
+-- Dumped by pg_dump version 9.5.5
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
 SET check_function_bodies = false;
 SET client_min_messages = warning;
 SET row_security = off;
@@ -83,6 +81,8 @@ CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
 
 
+SET search_path = film, pg_catalog;
+
 SET default_tablespace = '';
 
 SET default_with_oids = false;
@@ -91,7 +91,7 @@ SET default_with_oids = false;
 -- Name: film; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film (
+CREATE TABLE film (
     film_id bigint NOT NULL,
     title character varying(96) NOT NULL,
     running_time smallint,
@@ -104,25 +104,25 @@ CREATE TABLE film.film (
 );
 
 
-ALTER TABLE film.film OWNER TO postgres;
+ALTER TABLE film OWNER TO postgres;
 
 --
 -- Name: film_company; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film_company (
+CREATE TABLE film_company (
     film_id bigint NOT NULL,
     company_id bigint NOT NULL
 );
 
 
-ALTER TABLE film.film_company OWNER TO postgres;
+ALTER TABLE film_company OWNER TO postgres;
 
 --
 -- Name: film_company_company_id_seq; Type: SEQUENCE; Schema: film; Owner: postgres
 --
 
-CREATE SEQUENCE film.film_company_company_id_seq
+CREATE SEQUENCE film_company_company_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -130,32 +130,32 @@ CREATE SEQUENCE film.film_company_company_id_seq
     CACHE 1;
 
 
-ALTER TABLE film.film_company_company_id_seq OWNER TO postgres;
+ALTER TABLE film_company_company_id_seq OWNER TO postgres;
 
 --
 -- Name: film_company_company_id_seq; Type: SEQUENCE OWNED BY; Schema: film; Owner: postgres
 --
 
-ALTER SEQUENCE film.film_company_company_id_seq OWNED BY film.film_company.company_id;
+ALTER SEQUENCE film_company_company_id_seq OWNED BY film_company.company_id;
 
 
 --
 -- Name: film_country; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film_country (
+CREATE TABLE film_country (
     film_id bigint NOT NULL,
     country_id bigint NOT NULL
 );
 
 
-ALTER TABLE film.film_country OWNER TO postgres;
+ALTER TABLE film_country OWNER TO postgres;
 
 --
 -- Name: film_country_film_id_seq; Type: SEQUENCE; Schema: film; Owner: postgres
 --
 
-CREATE SEQUENCE film.film_country_film_id_seq
+CREATE SEQUENCE film_country_film_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -163,32 +163,32 @@ CREATE SEQUENCE film.film_country_film_id_seq
     CACHE 1;
 
 
-ALTER TABLE film.film_country_film_id_seq OWNER TO postgres;
+ALTER TABLE film_country_film_id_seq OWNER TO postgres;
 
 --
 -- Name: film_country_film_id_seq; Type: SEQUENCE OWNED BY; Schema: film; Owner: postgres
 --
 
-ALTER SEQUENCE film.film_country_film_id_seq OWNED BY film.film_country.film_id;
+ALTER SEQUENCE film_country_film_id_seq OWNED BY film_country.film_id;
 
 
 --
 -- Name: film_faward; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film_faward (
+CREATE TABLE film_faward (
     film_id bigint NOT NULL,
     faward_id bigint NOT NULL
 );
 
 
-ALTER TABLE film.film_faward OWNER TO postgres;
+ALTER TABLE film_faward OWNER TO postgres;
 
 --
 -- Name: film_film_id_seq; Type: SEQUENCE; Schema: film; Owner: postgres
 --
 
-CREATE SEQUENCE film.film_film_id_seq
+CREATE SEQUENCE film_film_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -196,69 +196,69 @@ CREATE SEQUENCE film.film_film_id_seq
     CACHE 1;
 
 
-ALTER TABLE film.film_film_id_seq OWNER TO postgres;
+ALTER TABLE film_film_id_seq OWNER TO postgres;
 
 --
 -- Name: film_film_id_seq; Type: SEQUENCE OWNED BY; Schema: film; Owner: postgres
 --
 
-ALTER SEQUENCE film.film_film_id_seq OWNED BY film.film.film_id;
+ALTER SEQUENCE film_film_id_seq OWNED BY film.film_id;
 
 
 --
 -- Name: film_genre; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film_genre (
+CREATE TABLE film_genre (
     film_id bigint NOT NULL,
     genre_id bigint NOT NULL
 );
 
 
-ALTER TABLE film.film_genre OWNER TO postgres;
+ALTER TABLE film_genre OWNER TO postgres;
 
 --
 -- Name: film_human_role; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film_human_role (
+CREATE TABLE film_human_role (
     film_id bigint NOT NULL,
     human_id bigint NOT NULL,
     role_id bigint NOT NULL
 );
 
 
-ALTER TABLE film.film_human_role OWNER TO postgres;
+ALTER TABLE film_human_role OWNER TO postgres;
 
 --
 -- Name: film_image; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.film_image (
+CREATE TABLE film_image (
     film_id bigint NOT NULL,
     image_id bigint NOT NULL
 );
 
 
-ALTER TABLE film.film_image OWNER TO postgres;
+ALTER TABLE film_image OWNER TO postgres;
 
 --
 -- Name: genre; Type: TABLE; Schema: film; Owner: postgres
 --
 
-CREATE TABLE film.genre (
+CREATE TABLE genre (
     genre_id bigint NOT NULL,
     title character varying(64) NOT NULL
 );
 
 
-ALTER TABLE film.genre OWNER TO postgres;
+ALTER TABLE genre OWNER TO postgres;
 
 --
 -- Name: genre_genre_id_seq; Type: SEQUENCE; Schema: film; Owner: postgres
 --
 
-CREATE SEQUENCE film.genre_genre_id_seq
+CREATE SEQUENCE genre_genre_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -266,33 +266,35 @@ CREATE SEQUENCE film.genre_genre_id_seq
     CACHE 1;
 
 
-ALTER TABLE film.genre_genre_id_seq OWNER TO postgres;
+ALTER TABLE genre_genre_id_seq OWNER TO postgres;
 
 --
 -- Name: genre_genre_id_seq; Type: SEQUENCE OWNED BY; Schema: film; Owner: postgres
 --
 
-ALTER SEQUENCE film.genre_genre_id_seq OWNED BY film.genre.genre_id;
+ALTER SEQUENCE genre_genre_id_seq OWNED BY genre.genre_id;
 
+
+SET search_path = misc, pg_catalog;
 
 --
 -- Name: faward; Type: TABLE; Schema: misc; Owner: postgres
 --
 
-CREATE TABLE misc.faward (
+CREATE TABLE faward (
     faward_id bigint NOT NULL,
     title character varying(32) NOT NULL,
     country bigint
 );
 
 
-ALTER TABLE misc.faward OWNER TO postgres;
+ALTER TABLE faward OWNER TO postgres;
 
 --
 -- Name: faward_faward_id_seq; Type: SEQUENCE; Schema: misc; Owner: postgres
 --
 
-CREATE SEQUENCE misc.faward_faward_id_seq
+CREATE SEQUENCE faward_faward_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -300,33 +302,33 @@ CREATE SEQUENCE misc.faward_faward_id_seq
     CACHE 1;
 
 
-ALTER TABLE misc.faward_faward_id_seq OWNER TO postgres;
+ALTER TABLE faward_faward_id_seq OWNER TO postgres;
 
 --
 -- Name: faward_faward_id_seq; Type: SEQUENCE OWNED BY; Schema: misc; Owner: postgres
 --
 
-ALTER SEQUENCE misc.faward_faward_id_seq OWNED BY misc.faward.faward_id;
+ALTER SEQUENCE faward_faward_id_seq OWNED BY faward.faward_id;
 
 
 --
 -- Name: haward; Type: TABLE; Schema: misc; Owner: postgres
 --
 
-CREATE TABLE misc.haward (
+CREATE TABLE haward (
     haward_id bigint NOT NULL,
     title character varying(64) NOT NULL,
     country bigint
 );
 
 
-ALTER TABLE misc.haward OWNER TO postgres;
+ALTER TABLE haward OWNER TO postgres;
 
 --
 -- Name: haward_haward_id_seq; Type: SEQUENCE; Schema: misc; Owner: postgres
 --
 
-CREATE SEQUENCE misc.haward_haward_id_seq
+CREATE SEQUENCE haward_haward_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -334,20 +336,22 @@ CREATE SEQUENCE misc.haward_haward_id_seq
     CACHE 1;
 
 
-ALTER TABLE misc.haward_haward_id_seq OWNER TO postgres;
+ALTER TABLE haward_haward_id_seq OWNER TO postgres;
 
 --
 -- Name: haward_haward_id_seq; Type: SEQUENCE OWNED BY; Schema: misc; Owner: postgres
 --
 
-ALTER SEQUENCE misc.haward_haward_id_seq OWNED BY misc.haward.haward_id;
+ALTER SEQUENCE haward_haward_id_seq OWNED BY haward.haward_id;
 
+
+SET search_path = production, pg_catalog;
 
 --
 -- Name: company; Type: TABLE; Schema: production; Owner: postgres
 --
 
-CREATE TABLE production.company (
+CREATE TABLE company (
     company_id bigint NOT NULL,
     title character varying(64) NOT NULL,
     description text,
@@ -356,13 +360,13 @@ CREATE TABLE production.company (
 );
 
 
-ALTER TABLE production.company OWNER TO postgres;
+ALTER TABLE company OWNER TO postgres;
 
 --
 -- Name: company_company_id_seq; Type: SEQUENCE; Schema: production; Owner: postgres
 --
 
-CREATE SEQUENCE production.company_company_id_seq
+CREATE SEQUENCE company_company_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -370,20 +374,22 @@ CREATE SEQUENCE production.company_company_id_seq
     CACHE 1;
 
 
-ALTER TABLE production.company_company_id_seq OWNER TO postgres;
+ALTER TABLE company_company_id_seq OWNER TO postgres;
 
 --
 -- Name: company_company_id_seq; Type: SEQUENCE OWNED BY; Schema: production; Owner: postgres
 --
 
-ALTER SEQUENCE production.company_company_id_seq OWNED BY production.company.company_id;
+ALTER SEQUENCE company_company_id_seq OWNED BY company.company_id;
 
+
+SET search_path = public, pg_catalog;
 
 --
 -- Name: image_image_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
-CREATE SEQUENCE public.image_image_id_seq
+CREATE SEQUENCE image_image_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -391,13 +397,15 @@ CREATE SEQUENCE public.image_image_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.image_image_id_seq OWNER TO postgres;
+ALTER TABLE image_image_id_seq OWNER TO postgres;
+
+SET search_path = staff, pg_catalog;
 
 --
 -- Name: human; Type: TABLE; Schema: staff; Owner: postgres
 --
 
-CREATE TABLE staff.human (
+CREATE TABLE human (
     human_id bigint NOT NULL,
     name character varying(32) NOT NULL,
     surname character varying(32),
@@ -406,30 +414,30 @@ CREATE TABLE staff.human (
     live_country bigint,
     year_active date,
     biography text,
-    short_decription text,
+    description text,
     imdb bigint
 );
 
 
-ALTER TABLE staff.human OWNER TO postgres;
+ALTER TABLE human OWNER TO postgres;
 
 --
 -- Name: human_haward; Type: TABLE; Schema: staff; Owner: postgres
 --
 
-CREATE TABLE staff.human_haward (
+CREATE TABLE human_haward (
     human_id bigint NOT NULL,
     haward_id bigint NOT NULL
 );
 
 
-ALTER TABLE staff.human_haward OWNER TO postgres;
+ALTER TABLE human_haward OWNER TO postgres;
 
 --
 -- Name: human_human_id_seq; Type: SEQUENCE; Schema: staff; Owner: postgres
 --
 
-CREATE SEQUENCE staff.human_human_id_seq
+CREATE SEQUENCE human_human_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -437,44 +445,44 @@ CREATE SEQUENCE staff.human_human_id_seq
     CACHE 1;
 
 
-ALTER TABLE staff.human_human_id_seq OWNER TO postgres;
+ALTER TABLE human_human_id_seq OWNER TO postgres;
 
 --
 -- Name: human_human_id_seq; Type: SEQUENCE OWNED BY; Schema: staff; Owner: postgres
 --
 
-ALTER SEQUENCE staff.human_human_id_seq OWNED BY staff.human.human_id;
+ALTER SEQUENCE human_human_id_seq OWNED BY human.human_id;
 
 
 --
 -- Name: human_image; Type: TABLE; Schema: staff; Owner: postgres
 --
 
-CREATE TABLE staff.human_image (
+CREATE TABLE human_image (
     human_id bigint NOT NULL,
     image_id bigint NOT NULL
 );
 
 
-ALTER TABLE staff.human_image OWNER TO postgres;
+ALTER TABLE human_image OWNER TO postgres;
 
 --
 -- Name: role; Type: TABLE; Schema: staff; Owner: postgres
 --
 
-CREATE TABLE staff.role (
+CREATE TABLE role (
     role_id bigint NOT NULL,
     description character varying(32) NOT NULL
 );
 
 
-ALTER TABLE staff.role OWNER TO postgres;
+ALTER TABLE role OWNER TO postgres;
 
 --
 -- Name: role_role_id_seq; Type: SEQUENCE; Schema: staff; Owner: postgres
 --
 
-CREATE SEQUENCE staff.role_role_id_seq
+CREATE SEQUENCE role_role_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -482,20 +490,22 @@ CREATE SEQUENCE staff.role_role_id_seq
     CACHE 1;
 
 
-ALTER TABLE staff.role_role_id_seq OWNER TO postgres;
+ALTER TABLE role_role_id_seq OWNER TO postgres;
 
 --
 -- Name: role_role_id_seq; Type: SEQUENCE OWNED BY; Schema: staff; Owner: postgres
 --
 
-ALTER SEQUENCE staff.role_role_id_seq OWNED BY staff.role.role_id;
+ALTER SEQUENCE role_role_id_seq OWNED BY role.role_id;
 
+
+SET search_path = storage, pg_catalog;
 
 --
 -- Name: image; Type: TABLE; Schema: storage; Owner: postgres
 --
 
-CREATE TABLE storage.image (
+CREATE TABLE image (
     image_id bigint DEFAULT nextval('public.image_image_id_seq'::regclass) NOT NULL,
     title character varying(32) NOT NULL,
     description text,
@@ -505,13 +515,13 @@ CREATE TABLE storage.image (
 );
 
 
-ALTER TABLE storage.image OWNER TO postgres;
+ALTER TABLE image OWNER TO postgres;
 
 --
 -- Name: image_image_id_seq; Type: SEQUENCE; Schema: storage; Owner: postgres
 --
 
-CREATE SEQUENCE storage.image_image_id_seq
+CREATE SEQUENCE image_image_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -519,13 +529,15 @@ CREATE SEQUENCE storage.image_image_id_seq
     CACHE 1;
 
 
-ALTER TABLE storage.image_image_id_seq OWNER TO postgres;
+ALTER TABLE image_image_id_seq OWNER TO postgres;
+
+SET search_path = zoning, pg_catalog;
 
 --
 -- Name: country; Type: TABLE; Schema: zoning; Owner: postgres
 --
 
-CREATE TABLE zoning.country (
+CREATE TABLE country (
     country_id bigint NOT NULL,
     title character varying(64) NOT NULL,
     code character varying(2) NOT NULL,
@@ -533,13 +545,13 @@ CREATE TABLE zoning.country (
 );
 
 
-ALTER TABLE zoning.country OWNER TO postgres;
+ALTER TABLE country OWNER TO postgres;
 
 --
 -- Name: country_country_id_seq; Type: SEQUENCE; Schema: zoning; Owner: postgres
 --
 
-CREATE SEQUENCE zoning.country_country_id_seq
+CREATE SEQUENCE country_country_id_seq
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -547,90 +559,102 @@ CREATE SEQUENCE zoning.country_country_id_seq
     CACHE 1;
 
 
-ALTER TABLE zoning.country_country_id_seq OWNER TO postgres;
+ALTER TABLE country_country_id_seq OWNER TO postgres;
 
 --
 -- Name: country_country_id_seq; Type: SEQUENCE OWNED BY; Schema: zoning; Owner: postgres
 --
 
-ALTER SEQUENCE zoning.country_country_id_seq OWNED BY zoning.country.country_id;
+ALTER SEQUENCE country_country_id_seq OWNED BY country.country_id;
+
+
+SET search_path = film, pg_catalog;
+
+--
+-- Name: film_id; Type: DEFAULT; Schema: film; Owner: postgres
+--
+
+ALTER TABLE ONLY film ALTER COLUMN film_id SET DEFAULT nextval('film_film_id_seq'::regclass);
 
 
 --
--- Name: film film_id; Type: DEFAULT; Schema: film; Owner: postgres
+-- Name: company_id; Type: DEFAULT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film ALTER COLUMN film_id SET DEFAULT nextval('film.film_film_id_seq'::regclass);
-
-
---
--- Name: film_company company_id; Type: DEFAULT; Schema: film; Owner: postgres
---
-
-ALTER TABLE ONLY film.film_company ALTER COLUMN company_id SET DEFAULT nextval('film.film_company_company_id_seq'::regclass);
+ALTER TABLE ONLY film_company ALTER COLUMN company_id SET DEFAULT nextval('film_company_company_id_seq'::regclass);
 
 
 --
--- Name: film_country film_id; Type: DEFAULT; Schema: film; Owner: postgres
+-- Name: film_id; Type: DEFAULT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_country ALTER COLUMN film_id SET DEFAULT nextval('film.film_country_film_id_seq'::regclass);
-
-
---
--- Name: genre genre_id; Type: DEFAULT; Schema: film; Owner: postgres
---
-
-ALTER TABLE ONLY film.genre ALTER COLUMN genre_id SET DEFAULT nextval('film.genre_genre_id_seq'::regclass);
+ALTER TABLE ONLY film_country ALTER COLUMN film_id SET DEFAULT nextval('film_country_film_id_seq'::regclass);
 
 
 --
--- Name: faward faward_id; Type: DEFAULT; Schema: misc; Owner: postgres
+-- Name: genre_id; Type: DEFAULT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.faward ALTER COLUMN faward_id SET DEFAULT nextval('misc.faward_faward_id_seq'::regclass);
+ALTER TABLE ONLY genre ALTER COLUMN genre_id SET DEFAULT nextval('genre_genre_id_seq'::regclass);
 
 
---
--- Name: haward haward_id; Type: DEFAULT; Schema: misc; Owner: postgres
---
-
-ALTER TABLE ONLY misc.haward ALTER COLUMN haward_id SET DEFAULT nextval('misc.haward_haward_id_seq'::regclass);
-
+SET search_path = misc, pg_catalog;
 
 --
--- Name: company company_id; Type: DEFAULT; Schema: production; Owner: postgres
+-- Name: faward_id; Type: DEFAULT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY production.company ALTER COLUMN company_id SET DEFAULT nextval('production.company_company_id_seq'::regclass);
+ALTER TABLE ONLY faward ALTER COLUMN faward_id SET DEFAULT nextval('faward_faward_id_seq'::regclass);
 
 
 --
--- Name: human human_id; Type: DEFAULT; Schema: staff; Owner: postgres
+-- Name: haward_id; Type: DEFAULT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human ALTER COLUMN human_id SET DEFAULT nextval('staff.human_human_id_seq'::regclass);
+ALTER TABLE ONLY haward ALTER COLUMN haward_id SET DEFAULT nextval('haward_haward_id_seq'::regclass);
+
+
+SET search_path = production, pg_catalog;
+
+--
+-- Name: company_id; Type: DEFAULT; Schema: production; Owner: postgres
+--
+
+ALTER TABLE ONLY company ALTER COLUMN company_id SET DEFAULT nextval('company_company_id_seq'::regclass);
+
+
+SET search_path = staff, pg_catalog;
+
+--
+-- Name: human_id; Type: DEFAULT; Schema: staff; Owner: postgres
+--
+
+ALTER TABLE ONLY human ALTER COLUMN human_id SET DEFAULT nextval('human_human_id_seq'::regclass);
 
 
 --
--- Name: role role_id; Type: DEFAULT; Schema: staff; Owner: postgres
+-- Name: role_id; Type: DEFAULT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.role ALTER COLUMN role_id SET DEFAULT nextval('staff.role_role_id_seq'::regclass);
+ALTER TABLE ONLY role ALTER COLUMN role_id SET DEFAULT nextval('role_role_id_seq'::regclass);
 
+
+SET search_path = zoning, pg_catalog;
 
 --
--- Name: country country_id; Type: DEFAULT; Schema: zoning; Owner: postgres
+-- Name: country_id; Type: DEFAULT; Schema: zoning; Owner: postgres
 --
 
-ALTER TABLE ONLY zoning.country ALTER COLUMN country_id SET DEFAULT nextval('zoning.country_country_id_seq'::regclass);
+ALTER TABLE ONLY country ALTER COLUMN country_id SET DEFAULT nextval('country_country_id_seq'::regclass);
 
+
+SET search_path = film, pg_catalog;
 
 --
 -- Data for Name: film; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film (film_id, title, running_time, budget, box_office, release_date, imdb, "timestamp") FROM stdin;
+COPY film (film_id, title, running_time, budget, box_office, release_date, imdb, "timestamp") FROM stdin;
 1	Men in Black	98	90000000	589000000	1997-07-02	119654	2018-04-25 20:22:14.342608
 3	Men in Black 2	88	140000000	441800000	2002-07-03	120912	2018-04-25 21:00:47.178714
 \.
@@ -640,7 +664,8 @@ COPY film.film (film_id, title, running_time, budget, box_office, release_date, 
 -- Data for Name: film_company; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film_company (film_id, company_id) FROM stdin;
+COPY film_company (film_id, company_id) FROM stdin;
+1	1
 \.
 
 
@@ -648,14 +673,14 @@ COPY film.film_company (film_id, company_id) FROM stdin;
 -- Name: film_company_company_id_seq; Type: SEQUENCE SET; Schema: film; Owner: postgres
 --
 
-SELECT pg_catalog.setval('film.film_company_company_id_seq', 1, false);
+SELECT pg_catalog.setval('film_company_company_id_seq', 1, false);
 
 
 --
 -- Data for Name: film_country; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film_country (film_id, country_id) FROM stdin;
+COPY film_country (film_id, country_id) FROM stdin;
 1	228
 \.
 
@@ -664,14 +689,15 @@ COPY film.film_country (film_id, country_id) FROM stdin;
 -- Name: film_country_film_id_seq; Type: SEQUENCE SET; Schema: film; Owner: postgres
 --
 
-SELECT pg_catalog.setval('film.film_country_film_id_seq', 1, false);
+SELECT pg_catalog.setval('film_country_film_id_seq', 1, false);
 
 
 --
 -- Data for Name: film_faward; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film_faward (film_id, faward_id) FROM stdin;
+COPY film_faward (film_id, faward_id) FROM stdin;
+1	1
 \.
 
 
@@ -679,14 +705,17 @@ COPY film.film_faward (film_id, faward_id) FROM stdin;
 -- Name: film_film_id_seq; Type: SEQUENCE SET; Schema: film; Owner: postgres
 --
 
-SELECT pg_catalog.setval('film.film_film_id_seq', 3, true);
+SELECT pg_catalog.setval('film_film_id_seq', 3, true);
 
 
 --
 -- Data for Name: film_genre; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film_genre (film_id, genre_id) FROM stdin;
+COPY film_genre (film_id, genre_id) FROM stdin;
+1	1
+1	2
+1	3
 \.
 
 
@@ -694,7 +723,9 @@ COPY film.film_genre (film_id, genre_id) FROM stdin;
 -- Data for Name: film_human_role; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film_human_role (film_id, human_id, role_id) FROM stdin;
+COPY film_human_role (film_id, human_id, role_id) FROM stdin;
+1	1	4
+1	1	6
 \.
 
 
@@ -702,7 +733,7 @@ COPY film.film_human_role (film_id, human_id, role_id) FROM stdin;
 -- Data for Name: film_image; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.film_image (film_id, image_id) FROM stdin;
+COPY film_image (film_id, image_id) FROM stdin;
 \.
 
 
@@ -710,7 +741,15 @@ COPY film.film_image (film_id, image_id) FROM stdin;
 -- Data for Name: genre; Type: TABLE DATA; Schema: film; Owner: postgres
 --
 
-COPY film.genre (genre_id, title) FROM stdin;
+COPY genre (genre_id, title) FROM stdin;
+1	Action
+2	Comedy
+3	Adventure
+4	Comedie
+5	Crime
+6	Drama
+7	Historical
+8	Horror
 \.
 
 
@@ -718,14 +757,17 @@ COPY film.genre (genre_id, title) FROM stdin;
 -- Name: genre_genre_id_seq; Type: SEQUENCE SET; Schema: film; Owner: postgres
 --
 
-SELECT pg_catalog.setval('film.genre_genre_id_seq', 1, false);
+SELECT pg_catalog.setval('genre_genre_id_seq', 8, true);
 
+
+SET search_path = misc, pg_catalog;
 
 --
 -- Data for Name: faward; Type: TABLE DATA; Schema: misc; Owner: postgres
 --
 
-COPY misc.faward (faward_id, title, country) FROM stdin;
+COPY faward (faward_id, title, country) FROM stdin;
+1	TEST	228
 \.
 
 
@@ -733,14 +775,14 @@ COPY misc.faward (faward_id, title, country) FROM stdin;
 -- Name: faward_faward_id_seq; Type: SEQUENCE SET; Schema: misc; Owner: postgres
 --
 
-SELECT pg_catalog.setval('misc.faward_faward_id_seq', 1, false);
+SELECT pg_catalog.setval('faward_faward_id_seq', 1, true);
 
 
 --
 -- Data for Name: haward; Type: TABLE DATA; Schema: misc; Owner: postgres
 --
 
-COPY misc.haward (haward_id, title, country) FROM stdin;
+COPY haward (haward_id, title, country) FROM stdin;
 1	Academy Award for Best Supporting Actor	228
 2	Golden Globe	228
 3	Emmy	228
@@ -751,14 +793,17 @@ COPY misc.haward (haward_id, title, country) FROM stdin;
 -- Name: haward_haward_id_seq; Type: SEQUENCE SET; Schema: misc; Owner: postgres
 --
 
-SELECT pg_catalog.setval('misc.haward_haward_id_seq', 3, true);
+SELECT pg_catalog.setval('haward_haward_id_seq', 3, true);
 
+
+SET search_path = production, pg_catalog;
 
 --
 -- Data for Name: company; Type: TABLE DATA; Schema: production; Owner: postgres
 --
 
-COPY production.company (company_id, title, description, country, headquarters) FROM stdin;
+COPY company (company_id, title, description, country, headquarters) FROM stdin;
+1	Amblin Entertainment	Amblin Entertainment is an American film and television production company founded by director and producer Steven Spielberg, and film producers Kathleen Kennedy and Frank Marshall in 1981. The companys headquarters are located on the backlot of Universal Studios in Universal City, California.	228	228
 \.
 
 
@@ -766,21 +811,25 @@ COPY production.company (company_id, title, description, country, headquarters) 
 -- Name: company_company_id_seq; Type: SEQUENCE SET; Schema: production; Owner: postgres
 --
 
-SELECT pg_catalog.setval('production.company_company_id_seq', 1, false);
+SELECT pg_catalog.setval('company_company_id_seq', 1, true);
 
+
+SET search_path = public, pg_catalog;
 
 --
 -- Name: image_image_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.image_image_id_seq', 1, true);
+SELECT pg_catalog.setval('image_image_id_seq', 1, true);
 
+
+SET search_path = staff, pg_catalog;
 
 --
 -- Data for Name: human; Type: TABLE DATA; Schema: staff; Owner: postgres
 --
 
-COPY staff.human (human_id, name, surname, birthdate, born_country, live_country, year_active, biography, short_decription, imdb) FROM stdin;
+COPY human (human_id, name, surname, birthdate, born_country, live_country, year_active, biography, description, imdb) FROM stdin;
 1	Tommy	Lee Jones	1946-08-15	228	228	1969-01-01	Jones was born on September 15, 1946,  in San Saba, Texas. His mother, Lucille Marie  (née Scott), was a police officer, school teacher, and beauty shop owner, and his father, Clyde C. Jones, was an oil field worker. The two were married and divorced twice. His family has Cherokee roots. He was raised in Midland, Texas and attended Robert E. Lee High School.	Thomas Lee Jones (born September 15, 1946) is an American actor and filmmaker. He has received four Academy Award nominations, winning Best Supporting Actor for his performance as U.S. Marshal Samuel Gerard in the 1993 thriller film The Fugitive.	2576863
 3	Will	Smith	1968-09-25	228	228	1985-01-01	Smith was born on September 25, 1968 in Philadelphia, Pennsylvania, to Caroline (Bright), a Philadelphia school board administrator, and Willard Carroll Smith Sr., U.S. Air Force veteran and refrigeration engineer. He grew up in West Philadelphias Wynnefield neighborhood, and was raised Baptist. He has three siblings, sister Pamela, who is four years older, and twins Harry and Ellen, who are three years younger. Smith attended Our Lady of Lourdes, a private Catholic elementary school in Philadelphia. His parents separated when he was 13, but did not actually divorce until around 2000.	Willard Carroll Smith Jr. (born September 25, 1968) is an American actor, producer, rapper, comedian, and songwriter. In April 2007, Newsweek called him "the most powerful actor in Hollywood". Smith has been nominated for five Golden Globe Awards and two Academy Awards, and has won four Grammy Awards.	226
 \.
@@ -790,7 +839,7 @@ COPY staff.human (human_id, name, surname, birthdate, born_country, live_country
 -- Data for Name: human_haward; Type: TABLE DATA; Schema: staff; Owner: postgres
 --
 
-COPY staff.human_haward (human_id, haward_id) FROM stdin;
+COPY human_haward (human_id, haward_id) FROM stdin;
 1	1
 1	2
 1	3
@@ -801,14 +850,14 @@ COPY staff.human_haward (human_id, haward_id) FROM stdin;
 -- Name: human_human_id_seq; Type: SEQUENCE SET; Schema: staff; Owner: postgres
 --
 
-SELECT pg_catalog.setval('staff.human_human_id_seq', 3, true);
+SELECT pg_catalog.setval('human_human_id_seq', 3, true);
 
 
 --
 -- Data for Name: human_image; Type: TABLE DATA; Schema: staff; Owner: postgres
 --
 
-COPY staff.human_image (human_id, image_id) FROM stdin;
+COPY human_image (human_id, image_id) FROM stdin;
 \.
 
 
@@ -816,7 +865,7 @@ COPY staff.human_image (human_id, image_id) FROM stdin;
 -- Data for Name: role; Type: TABLE DATA; Schema: staff; Owner: postgres
 --
 
-COPY staff.role (role_id, description) FROM stdin;
+COPY role (role_id, description) FROM stdin;
 1	Director
 2	Producer
 3	Screenwriter
@@ -831,14 +880,16 @@ COPY staff.role (role_id, description) FROM stdin;
 -- Name: role_role_id_seq; Type: SEQUENCE SET; Schema: staff; Owner: postgres
 --
 
-SELECT pg_catalog.setval('staff.role_role_id_seq', 7, true);
+SELECT pg_catalog.setval('role_role_id_seq', 12, true);
 
+
+SET search_path = storage, pg_catalog;
 
 --
 -- Data for Name: image; Type: TABLE DATA; Schema: storage; Owner: postgres
 --
 
-COPY storage.image (image_id, title, description, upload_date, location, type) FROM stdin;
+COPY image (image_id, title, description, upload_date, location, type) FROM stdin;
 1	simpleimage_test.png	image for some tests	2018-04-25 20:43:46.798837	C:/User/Desktop/	3
 \.
 
@@ -847,14 +898,16 @@ COPY storage.image (image_id, title, description, upload_date, location, type) F
 -- Name: image_image_id_seq; Type: SEQUENCE SET; Schema: storage; Owner: postgres
 --
 
-SELECT pg_catalog.setval('storage.image_image_id_seq', 1, false);
+SELECT pg_catalog.setval('image_image_id_seq', 1, false);
 
+
+SET search_path = zoning, pg_catalog;
 
 --
 -- Data for Name: country; Type: TABLE DATA; Schema: zoning; Owner: postgres
 --
 
-COPY zoning.country (country_id, title, code, flag) FROM stdin;
+COPY country (country_id, title, code, flag) FROM stdin;
 1	Afghanistan	AF	\N
 2	Albania	AL	\N
 3	Algeria	DZ	\N
@@ -1096,6 +1149,7 @@ COPY zoning.country (country_id, title, code, flag) FROM stdin;
 239	Yemen	YE	\N
 240	Zambia	ZM	\N
 241	Zimbabwe	ZW	\N
+242	QQQQQ	QQ	\N
 \.
 
 
@@ -1103,327 +1157,367 @@ COPY zoning.country (country_id, title, code, flag) FROM stdin;
 -- Name: country_country_id_seq; Type: SEQUENCE SET; Schema: zoning; Owner: postgres
 --
 
-SELECT pg_catalog.setval('zoning.country_country_id_seq', 241, true);
+SELECT pg_catalog.setval('country_country_id_seq', 242, true);
 
+
+SET search_path = film, pg_catalog;
 
 --
--- Name: film_company film_company_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_company_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_company
+ALTER TABLE ONLY film_company
     ADD CONSTRAINT film_company_pkey PRIMARY KEY (film_id, company_id);
 
 
 --
--- Name: film_country film_country_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_country_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_country
+ALTER TABLE ONLY film_country
     ADD CONSTRAINT film_country_pkey PRIMARY KEY (film_id, country_id);
 
 
 --
--- Name: film_faward film_faward_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_faward_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_faward
+ALTER TABLE ONLY film_faward
     ADD CONSTRAINT film_faward_pkey PRIMARY KEY (film_id, faward_id);
 
 
 --
--- Name: film_genre film_genre_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_genre_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_genre
+ALTER TABLE ONLY film_genre
     ADD CONSTRAINT film_genre_pkey PRIMARY KEY (film_id, genre_id);
 
 
 --
--- Name: film_human_role film_human_role_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_human_role_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_human_role
+ALTER TABLE ONLY film_human_role
     ADD CONSTRAINT film_human_role_pkey PRIMARY KEY (film_id, human_id, role_id);
 
 
 --
--- Name: film_image film_image_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_image_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_image
+ALTER TABLE ONLY film_image
     ADD CONSTRAINT film_image_pkey PRIMARY KEY (film_id, image_id);
 
 
 --
--- Name: film film_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film
+ALTER TABLE ONLY film
     ADD CONSTRAINT film_pkey PRIMARY KEY (film_id);
 
 
 --
--- Name: genre genre_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
+-- Name: genre_pkey; Type: CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.genre
+ALTER TABLE ONLY genre
     ADD CONSTRAINT genre_pkey PRIMARY KEY (genre_id);
 
 
+SET search_path = misc, pg_catalog;
+
 --
--- Name: faward faward_pkey; Type: CONSTRAINT; Schema: misc; Owner: postgres
+-- Name: faward_pkey; Type: CONSTRAINT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.faward
+ALTER TABLE ONLY faward
     ADD CONSTRAINT faward_pkey PRIMARY KEY (faward_id);
 
 
 --
--- Name: haward haward_pkey; Type: CONSTRAINT; Schema: misc; Owner: postgres
+-- Name: haward_pkey; Type: CONSTRAINT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.haward
+ALTER TABLE ONLY haward
     ADD CONSTRAINT haward_pkey PRIMARY KEY (haward_id);
 
 
+SET search_path = production, pg_catalog;
+
 --
--- Name: company company_pkey; Type: CONSTRAINT; Schema: production; Owner: postgres
+-- Name: company_pkey; Type: CONSTRAINT; Schema: production; Owner: postgres
 --
 
-ALTER TABLE ONLY production.company
+ALTER TABLE ONLY company
     ADD CONSTRAINT company_pkey PRIMARY KEY (company_id);
 
 
+SET search_path = staff, pg_catalog;
+
 --
--- Name: human_haward human_haward_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_haward_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human_haward
+ALTER TABLE ONLY human_haward
     ADD CONSTRAINT human_haward_pkey PRIMARY KEY (human_id, haward_id);
 
 
 --
--- Name: human_image human_image_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_image_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human_image
+ALTER TABLE ONLY human_image
     ADD CONSTRAINT human_image_pkey PRIMARY KEY (human_id, image_id);
 
 
 --
--- Name: human human_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human
+ALTER TABLE ONLY human
     ADD CONSTRAINT human_pkey PRIMARY KEY (human_id);
 
 
 --
--- Name: role role_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: role_pkey; Type: CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.role
+ALTER TABLE ONLY role
     ADD CONSTRAINT role_pkey PRIMARY KEY (role_id);
 
 
+SET search_path = storage, pg_catalog;
+
 --
--- Name: image image_pkey; Type: CONSTRAINT; Schema: storage; Owner: postgres
+-- Name: image_pkey; Type: CONSTRAINT; Schema: storage; Owner: postgres
 --
 
-ALTER TABLE ONLY storage.image
+ALTER TABLE ONLY image
     ADD CONSTRAINT image_pkey PRIMARY KEY (image_id);
 
 
+SET search_path = zoning, pg_catalog;
+
 --
--- Name: country country_pkey; Type: CONSTRAINT; Schema: zoning; Owner: postgres
+-- Name: country_pkey; Type: CONSTRAINT; Schema: zoning; Owner: postgres
 --
 
-ALTER TABLE ONLY zoning.country
+ALTER TABLE ONLY country
     ADD CONSTRAINT country_pkey PRIMARY KEY (country_id);
 
 
+SET search_path = film, pg_catalog;
+
 --
--- Name: film_company film_company_company_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_company_company_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_company
+ALTER TABLE ONLY film_company
     ADD CONSTRAINT film_company_company_id_fkey FOREIGN KEY (company_id) REFERENCES production.company(company_id);
 
 
 --
--- Name: film_company film_company_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_company_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_company
-    ADD CONSTRAINT film_company_film_id_fkey FOREIGN KEY (film_id) REFERENCES film.film(film_id);
+ALTER TABLE ONLY film_company
+    ADD CONSTRAINT film_company_film_id_fkey FOREIGN KEY (film_id) REFERENCES film(film_id);
 
 
 --
--- Name: film_country film_country_country_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_country_country_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_country
+ALTER TABLE ONLY film_country
     ADD CONSTRAINT film_country_country_id_fkey FOREIGN KEY (country_id) REFERENCES zoning.country(country_id);
 
 
 --
--- Name: film_country film_country_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_country_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_country
-    ADD CONSTRAINT film_country_film_id_fkey FOREIGN KEY (film_id) REFERENCES film.film(film_id);
+ALTER TABLE ONLY film_country
+    ADD CONSTRAINT film_country_film_id_fkey FOREIGN KEY (film_id) REFERENCES film(film_id);
 
 
 --
--- Name: film_faward film_faward_faward_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_faward_faward_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_faward
+ALTER TABLE ONLY film_faward
     ADD CONSTRAINT film_faward_faward_id_fkey FOREIGN KEY (faward_id) REFERENCES misc.faward(faward_id);
 
 
 --
--- Name: film_faward film_faward_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_faward_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_faward
-    ADD CONSTRAINT film_faward_film_id_fkey FOREIGN KEY (film_id) REFERENCES film.film(film_id);
-
-
---
--- Name: film_genre film_genre_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
---
-
-ALTER TABLE ONLY film.film_genre
-    ADD CONSTRAINT film_genre_film_id_fkey FOREIGN KEY (film_id) REFERENCES film.film(film_id);
+ALTER TABLE ONLY film_faward
+    ADD CONSTRAINT film_faward_film_id_fkey FOREIGN KEY (film_id) REFERENCES film(film_id);
 
 
 --
--- Name: film_genre film_genre_genre_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_genre_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_genre
-    ADD CONSTRAINT film_genre_genre_id_fkey FOREIGN KEY (genre_id) REFERENCES film.genre(genre_id);
-
-
---
--- Name: film_human_role film_human_role_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
---
-
-ALTER TABLE ONLY film.film_human_role
-    ADD CONSTRAINT film_human_role_film_id_fkey FOREIGN KEY (film_id) REFERENCES film.film(film_id);
+ALTER TABLE ONLY film_genre
+    ADD CONSTRAINT film_genre_film_id_fkey FOREIGN KEY (film_id) REFERENCES film(film_id);
 
 
 --
--- Name: film_human_role film_human_role_human_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_genre_genre_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_human_role
+ALTER TABLE ONLY film_genre
+    ADD CONSTRAINT film_genre_genre_id_fkey FOREIGN KEY (genre_id) REFERENCES genre(genre_id);
+
+
+--
+-- Name: film_human_role_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+--
+
+ALTER TABLE ONLY film_human_role
+    ADD CONSTRAINT film_human_role_film_id_fkey FOREIGN KEY (film_id) REFERENCES film(film_id);
+
+
+--
+-- Name: film_human_role_human_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+--
+
+ALTER TABLE ONLY film_human_role
     ADD CONSTRAINT film_human_role_human_id_fkey FOREIGN KEY (human_id) REFERENCES staff.human(human_id);
 
 
 --
--- Name: film_human_role film_human_role_role_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_human_role_role_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_human_role
+ALTER TABLE ONLY film_human_role
     ADD CONSTRAINT film_human_role_role_id_fkey FOREIGN KEY (role_id) REFERENCES staff.role(role_id);
 
 
 --
--- Name: film_image film_image_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_image_film_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_image
-    ADD CONSTRAINT film_image_film_id_fkey FOREIGN KEY (film_id) REFERENCES film.film(film_id);
+ALTER TABLE ONLY film_image
+    ADD CONSTRAINT film_image_film_id_fkey FOREIGN KEY (film_id) REFERENCES film(film_id);
 
 
 --
--- Name: film_image film_image_image_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
+-- Name: film_image_image_id_fkey; Type: FK CONSTRAINT; Schema: film; Owner: postgres
 --
 
-ALTER TABLE ONLY film.film_image
+ALTER TABLE ONLY film_image
     ADD CONSTRAINT film_image_image_id_fkey FOREIGN KEY (image_id) REFERENCES storage.image(image_id);
 
 
+SET search_path = misc, pg_catalog;
+
 --
--- Name: faward faward_country_fkey; Type: FK CONSTRAINT; Schema: misc; Owner: postgres
+-- Name: faward_country_fkey; Type: FK CONSTRAINT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.faward
+ALTER TABLE ONLY faward
     ADD CONSTRAINT faward_country_fkey FOREIGN KEY (country) REFERENCES zoning.country(country_id) ON DELETE SET NULL;
 
 
 --
--- Name: haward haward_country_fkey; Type: FK CONSTRAINT; Schema: misc; Owner: postgres
+-- Name: haward_country_fkey; Type: FK CONSTRAINT; Schema: misc; Owner: postgres
 --
 
-ALTER TABLE ONLY misc.haward
+ALTER TABLE ONLY haward
     ADD CONSTRAINT haward_country_fkey FOREIGN KEY (country) REFERENCES zoning.country(country_id) ON DELETE SET NULL;
 
 
+SET search_path = production, pg_catalog;
+
 --
--- Name: company company_country_fkey; Type: FK CONSTRAINT; Schema: production; Owner: postgres
+-- Name: company_country_fkey; Type: FK CONSTRAINT; Schema: production; Owner: postgres
 --
 
-ALTER TABLE ONLY production.company
+ALTER TABLE ONLY company
     ADD CONSTRAINT company_country_fkey FOREIGN KEY (country) REFERENCES zoning.country(country_id) ON DELETE SET NULL;
 
 
 --
--- Name: company company_headquarters_fkey; Type: FK CONSTRAINT; Schema: production; Owner: postgres
+-- Name: company_headquarters_fkey; Type: FK CONSTRAINT; Schema: production; Owner: postgres
 --
 
-ALTER TABLE ONLY production.company
+ALTER TABLE ONLY company
     ADD CONSTRAINT company_headquarters_fkey FOREIGN KEY (headquarters) REFERENCES zoning.country(country_id) ON DELETE SET NULL;
 
 
+SET search_path = staff, pg_catalog;
+
 --
--- Name: human human_born_country_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_born_country_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human
+ALTER TABLE ONLY human
     ADD CONSTRAINT human_born_country_fkey FOREIGN KEY (born_country) REFERENCES zoning.country(country_id) ON DELETE SET NULL;
 
 
 --
--- Name: human_haward human_haward_haward_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_haward_haward_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human_haward
+ALTER TABLE ONLY human_haward
     ADD CONSTRAINT human_haward_haward_id_fkey FOREIGN KEY (haward_id) REFERENCES misc.haward(haward_id);
 
 
 --
--- Name: human_haward human_haward_human_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_haward_human_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human_haward
-    ADD CONSTRAINT human_haward_human_id_fkey FOREIGN KEY (human_id) REFERENCES staff.human(human_id);
-
-
---
--- Name: human_image human_image_human_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
---
-
-ALTER TABLE ONLY staff.human_image
-    ADD CONSTRAINT human_image_human_id_fkey FOREIGN KEY (human_id) REFERENCES staff.human(human_id);
+ALTER TABLE ONLY human_haward
+    ADD CONSTRAINT human_haward_human_id_fkey FOREIGN KEY (human_id) REFERENCES human(human_id);
 
 
 --
--- Name: human_image human_image_image_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_image_human_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human_image
+ALTER TABLE ONLY human_image
+    ADD CONSTRAINT human_image_human_id_fkey FOREIGN KEY (human_id) REFERENCES human(human_id);
+
+
+--
+-- Name: human_image_image_id_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
+--
+
+ALTER TABLE ONLY human_image
     ADD CONSTRAINT human_image_image_id_fkey FOREIGN KEY (image_id) REFERENCES storage.image(image_id);
 
 
 --
--- Name: human human_live_country_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
+-- Name: human_live_country_fkey; Type: FK CONSTRAINT; Schema: staff; Owner: postgres
 --
 
-ALTER TABLE ONLY staff.human
+ALTER TABLE ONLY human
     ADD CONSTRAINT human_live_country_fkey FOREIGN KEY (live_country) REFERENCES zoning.country(country_id) ON DELETE SET NULL;
+
+
+SET search_path = zoning, pg_catalog;
+
+--
+-- Name: country_flag_fkey; Type: FK CONSTRAINT; Schema: zoning; Owner: postgres
+--
+
+ALTER TABLE ONLY country
+    ADD CONSTRAINT country_flag_fkey FOREIGN KEY (flag) REFERENCES storage.image(image_id);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
 --

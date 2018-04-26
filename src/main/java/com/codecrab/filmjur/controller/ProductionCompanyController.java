@@ -1,6 +1,6 @@
 package com.codecrab.filmjur.controller;
 
-import com.codecrab.filmjur.entity.ProductionCompany;
+import com.codecrab.filmjur.entity.Company;
 import com.codecrab.filmjur.service.CountryService;
 import com.codecrab.filmjur.service.ProductionCompanyService;
 import com.codecrab.filmjur.util.CustomErrorType;
@@ -27,9 +27,9 @@ public class ProductionCompanyController {
     CountryService countryService;
 
     @RequestMapping(value = "/production/company/", method = RequestMethod.GET)
-    public ResponseEntity<List<ProductionCompany>> listAllProductionCompanies(){
+    public ResponseEntity<List<Company>> listAllProductionCompanies(){
         logger.info("Fetching all Production Companies.");
-        List<ProductionCompany> productionCompanies = productionCompanyService.findAllProductionCompanies();
+        List<Company> productionCompanies = productionCompanyService.findAllProductionCompanies();
         if(productionCompanies.isEmpty()){
             logger.error("No production companies has been found.");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -40,66 +40,66 @@ public class ProductionCompanyController {
     @RequestMapping(value = "/production/company/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> getProductionCompany(@PathVariable("id") long id){
         logger.info("Fetching production company with id {}.", id);
-        ProductionCompany productionCompany = productionCompanyService.findById(id);
-        if(productionCompany == null){
+        Company company = productionCompanyService.findById(id);
+        if(company == null){
             logger.error("Production company with id {} not found.");
             return new ResponseEntity<>(new CustomErrorType("Production company with id " + id
                     + " not found."), HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(productionCompany, HttpStatus.OK);
+        return new ResponseEntity<>(company, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/production/company/", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<?> addProductionCompany(@RequestBody ProductionCompany productionCompany,
+    public ResponseEntity<?> addProductionCompany(@RequestBody Company company,
                                                   UriComponentsBuilder ucBuilder){
-        logger.info("Adding production company : {}", productionCompany);
+        logger.info("Adding production company : {}", company);
 
-        ProductionCompany local = new ProductionCompany();
+        Company local = new Company();
 
-        local.setTitle(productionCompany.getTitle());
-        local.setCountry(countryService.findById(productionCompany.getCountry().getId()));
+        local.setTitle(company.getTitle());
+        local.setCountry(countryService.findById(company.getCountry().getId()));
 
 
         if(productionCompanyService.isProductionCompanyExist(local)){
             logger.error("Unable to add production company. A production company with title {} already exists"
-                    , productionCompany.getTitle());
+                    , company.getTitle());
             return new ResponseEntity<>(new CustomErrorType("Unable to add. Genre with title "
-                    + productionCompany.getTitle() + " already exists."), HttpStatus.CONFLICT);
+                    + company.getTitle() + " already exists."), HttpStatus.CONFLICT);
         }
         productionCompanyService.saveProductionCompany(local);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/production/company/{id}")
-                .buildAndExpand(productionCompany.getId()).toUri());
+                .buildAndExpand(company.getId()).toUri());
         return new ResponseEntity<String>(headers, HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/production/company/{id}", method = RequestMethod.PUT)
     public ResponseEntity<?> updateProductionCompany(@PathVariable("id") long id,
-                                                    @RequestBody ProductionCompany productionCompany){
+                                                    @RequestBody Company company){
         logger.info("Updating production company with id {}", id);
 
-        ProductionCompany currentProductionCompany = productionCompanyService.findById(id);
+        Company currentCompany = productionCompanyService.findById(id);
 
-        if(currentProductionCompany == null){
+        if(currentCompany == null){
             logger.error("Unable to update. Production company with id {} not found.", id);
             return new ResponseEntity<>(new CustomErrorType("Unable to update. " +
                     "Production company with id" +
                     id + " not found."), HttpStatus.NOT_FOUND);
         }
 
-        currentProductionCompany.setTitle(productionCompany.getTitle());
-        currentProductionCompany.setCountry(productionCompany.getCountry());
-        productionCompanyService.updateProductionCompany(currentProductionCompany);
-        return new ResponseEntity<>(currentProductionCompany, HttpStatus.OK);
+        currentCompany.setTitle(company.getTitle());
+        currentCompany.setCountry(company.getCountry());
+        productionCompanyService.updateProductionCompany(currentCompany);
+        return new ResponseEntity<>(currentCompany, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/production/company/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteGenre(@PathVariable("id") long id){
         logger.info("Fetching & Deleting production company with id {}", id);
 
-        ProductionCompany productionCompany = productionCompanyService.findById(id);
-        if(productionCompany == null){
+        Company company = productionCompanyService.findById(id);
+        if(company == null){
             logger.error("Unable to delete. Production company with id {} not found.", id);
             return new ResponseEntity<>(new CustomErrorType("Unable to delete. " +
                     "Production company with id" +

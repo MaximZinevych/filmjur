@@ -1,8 +1,6 @@
 package com.codecrab.filmjur.controller;
 
-import com.codecrab.filmjur.dto.AwardRequestDto;
-import com.codecrab.filmjur.dto.AwardResponseDto;
-import com.codecrab.filmjur.entity.Award;
+import com.codecrab.filmjur.entity.HAward;
 import com.codecrab.filmjur.service.AwardService;
 import com.codecrab.filmjur.service.CountryService;
 import com.codecrab.filmjur.util.CustomErrorType;
@@ -20,9 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/api")
@@ -40,50 +36,50 @@ public class AwardController {
     CountryService countryService;
 
     @RequestMapping(value = "/awards/", method = RequestMethod.GET)
-    public ResponseEntity<List<Award>> getAwards(){
-        logger.info("Fetching all awards.");
-        List<Award> awards = awardService.findAllAwards();
+    public ResponseEntity<List<HAward>> getAwards(){
+        logger.info("Fetching all HAwards.");
+        List<HAward> HAwards = awardService.findAllAwards();
 //        List<AwardResponseDto> awardResponseDtos = new ArrayList<>();
-//        for (Award award : awards){
+//        for (HAward award : HAwards){
 //            awardResponseDtos.add(convertToDto(award));
 //        }
-        if(awards.isEmpty()){
+        if(HAwards.isEmpty()){
             logger.error("No award has been found.");
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(awards, HttpStatus.OK);
+        return new ResponseEntity<>(HAwards, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/awards/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> getAward(@PathVariable("id") long id){
-        logger.info("Fetching award with id {}.", id);
-        Award award = awardService.findById(id);
+        logger.info("Fetching HAward with id {}.", id);
+        HAward HAward = awardService.findById(id);
 
 
 
-        if(award == null){
-            logger.error("Award with id {} not found.");
-            return new ResponseEntity<>(new CustomErrorType("Award with id " + id
+        if(HAward == null){
+            logger.error("HAward with id {} not found.");
+            return new ResponseEntity<>(new CustomErrorType("HAward with id " + id
                     + " not found."), HttpStatus.NOT_FOUND);
         }
 
-//        AwardResponseDto awardDto = convertToDto(award);
-        return new ResponseEntity<>(award, HttpStatus.OK);
+//        AwardResponseDto awardDto = convertToDto(HAward);
+        return new ResponseEntity<>(HAward, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/awards/", method = RequestMethod.POST, consumes = "application/json")
-    public ResponseEntity<?> addAward(@RequestBody Award award, UriComponentsBuilder ucBuilder){
-        logger.info("Adding award : {}", award);
+    public ResponseEntity<?> addAward(@RequestBody HAward HAward, UriComponentsBuilder ucBuilder){
+        logger.info("Adding HAward : {}", HAward);
 
-        Award local = new Award();
+        HAward local = new HAward();
 
-        local.setTitle(award.getTitle());
-        local.setCountry(countryService.findById(award.getCountry().getId()));
+        local.setTitle(HAward.getTitle());
+        local.setCountry(countryService.findById(HAward.getCountry().getId()));
 
 
         if(awardService.isAwardExist(local)){
-            logger.error("Unable to add award. A award with title {} already exists", award.getTitle());
-            return new ResponseEntity<>(new CustomErrorType("Unable to add. Genre with title " + award.getTitle()
+            logger.error("Unable to add HAward. A HAward with title {} already exists", HAward.getTitle());
+            return new ResponseEntity<>(new CustomErrorType("Unable to add. Genre with title " + HAward.getTitle()
                     + " already exists."), HttpStatus.CONFLICT);
         }
         awardService.saveAward(local);
@@ -94,31 +90,31 @@ public class AwardController {
     }
 
     @RequestMapping(value = "/awards/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<?> updateAward(@PathVariable("id") long id, @RequestBody Award award){
-        logger.info("Updating award with id {}", id);
+    public ResponseEntity<?> updateAward(@PathVariable("id") long id, @RequestBody HAward HAward){
+        logger.info("Updating HAward with id {}", id);
 
-        Award currentAward = awardService.findById(id);
+        HAward currentHAward = awardService.findById(id);
 
-        if(currentAward == null){
-            logger.error("Unable to update. Award with id {} not found.", id);
-            return new ResponseEntity<>(new CustomErrorType("Unable to update. Award with id" +
+        if(currentHAward == null){
+            logger.error("Unable to update. HAward with id {} not found.", id);
+            return new ResponseEntity<>(new CustomErrorType("Unable to update. HAward with id" +
                     id + " not found."), HttpStatus.NOT_FOUND);
         }
 
-        currentAward.setTitle(award.getTitle());
-        currentAward.setCountry(countryService.findById(award.getId()));
-        awardService.updateAward(currentAward);
-        return new ResponseEntity<>(currentAward, HttpStatus.OK);
+        currentHAward.setTitle(HAward.getTitle());
+        currentHAward.setCountry(countryService.findById(HAward.getId()));
+        awardService.updateAward(currentHAward);
+        return new ResponseEntity<>(currentHAward, HttpStatus.OK);
     }
 
     @RequestMapping(value = "/awards/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<?> deleteAward(@PathVariable("id") long id){
-        logger.info("Fetching & Deleting award with id {}", id);
+        logger.info("Fetching & Deleting HAward with id {}", id);
 
-        Award award = awardService.findById(id);
-        if(award == null){
-            logger.error("Unable to delete. Award with id {} not found.", id);
-            return new ResponseEntity<>(new CustomErrorType("Unable to delete. Award with id" +
+        HAward HAward = awardService.findById(id);
+        if(HAward == null){
+            logger.error("Unable to delete. HAward with id {} not found.", id);
+            return new ResponseEntity<>(new CustomErrorType("Unable to delete. HAward with id" +
                     id + " not found."), HttpStatus.NOT_FOUND);
         }
 
@@ -126,7 +122,7 @@ public class AwardController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-//    private AwardResponseDto convertToDto(Award award){
+//    private AwardResponseDto convertToDto(HAward award){
 //        AwardResponseDto dto = modelMapper.map(award, AwardResponseDto.class);
 //        if(award.getCountry() != null){
 //            dto.setCountry(Optional.of(award.getCountry().getTitle()));

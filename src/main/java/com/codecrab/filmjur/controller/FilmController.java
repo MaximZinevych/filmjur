@@ -1,6 +1,7 @@
 package com.codecrab.filmjur.controller;
 
 import com.codecrab.filmjur.entity.Film;
+import com.codecrab.filmjur.repository.FilmRepository;
 import com.codecrab.filmjur.service.FilmService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,9 +23,11 @@ public class FilmController {
     @Autowired
     private FilmService filmService;
 
+
     @RequestMapping(value = "/films/", method = RequestMethod.GET)
     public ResponseEntity<List<Film>> listAllProductionCompanies(){
         logger.info("Fetching all Films.");
+
         List<Film> films = filmService.findAllFilms();
         if(films.isEmpty()){
             logger.error("No films has been found.");

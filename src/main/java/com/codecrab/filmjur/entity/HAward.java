@@ -1,5 +1,6 @@
 package com.codecrab.filmjur.entity;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,16 +9,15 @@ import javax.persistence.*;
 
 @Data @NoArgsConstructor
 @Entity
+@Table(schema = "misc", name = "haward")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-@NamedQuery(name = "ProductionCompany.findAllOrderBy", query = "SELECT pc FROM ProductionCompany pc ORDER BY pc.id")
-@Table(schema = "production", name = "production_company")
-public class ProductionCompany{
+@NamedQuery(name = "HAward.findAllOrderBy", query = "SELECT a FROM HAward a ORDER BY a.id")
+public class HAward {
 
-    @Id @Column(name = "id")
+    @Id @Column(name = "haward_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "title")
+    private long id;
+    
     private String title;
 
     @OneToOne(fetch = FetchType.LAZY)

@@ -23,7 +23,7 @@ export class RolesControlComponent implements OnInit {
       form.reset();
     }
     this.roleService.selectedRole = {
-      title: ''
+      description: ''
     };
   }
 

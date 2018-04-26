@@ -1,6 +1,6 @@
 package com.codecrab.filmjur.service;
 
-import com.codecrab.filmjur.entity.ProductionCompany;
+import com.codecrab.filmjur.entity.Company;
 import com.codecrab.filmjur.repository.ProductionCompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,24 +16,24 @@ public class ProductionCompanyServiceImpl implements ProductionCompanyService{
     ProductionCompanyRepository productionCompanyRepository;
 
     @Override
-    public ProductionCompany findById(Long id) {
+    public Company findById(Long id) {
         return productionCompanyRepository
                 .findById(id).isPresent() ? productionCompanyRepository.findById(id).get() : null;
     }
 
     @Override
-    public ProductionCompany findByTitle(String title) {
+    public Company findByTitle(String title) {
         return productionCompanyRepository.findByTitle(title);
     }
 
     @Override
-    public void saveProductionCompany(ProductionCompany productionCompany) {
-        productionCompanyRepository.save(productionCompany);
+    public void saveProductionCompany(Company company) {
+        productionCompanyRepository.save(company);
     }
 
     @Override
-    public void updateProductionCompany(ProductionCompany productionCompany) {
-        productionCompanyRepository.save(productionCompany);
+    public void updateProductionCompany(Company company) {
+        productionCompanyRepository.save(company);
     }
 
     @Override
@@ -42,12 +42,12 @@ public class ProductionCompanyServiceImpl implements ProductionCompanyService{
     }
 
     @Override
-    public List<ProductionCompany> findAllProductionCompanies() {
+    public List<Company> findAllProductionCompanies() {
         return productionCompanyRepository.findAllOrderBy();
     }
 
     @Override
-    public boolean isProductionCompanyExist(ProductionCompany productionCompany) {
-        return findByTitle(productionCompany.getTitle()) != null;
+    public boolean isProductionCompanyExist(Company company) {
+        return findByTitle(company.getTitle()) != null;
     }
 }

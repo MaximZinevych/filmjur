@@ -1,6 +1,6 @@
 package com.codecrab.filmjur.service;
 
-import com.codecrab.filmjur.entity.Award;
+import com.codecrab.filmjur.entity.HAward;
 import com.codecrab.filmjur.repository.AwardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,23 +16,23 @@ public class AwardServiceImpl implements AwardService {
     AwardRepository awardRepository;
 
     @Override
-    public Award findById(Long id) {
+    public HAward findById(Long id) {
         return awardRepository.findById(id).isPresent() ? awardRepository.findById(id).get() : null;
     }
 
     @Override
-    public Award findByTitle(String title) {
+    public HAward findByTitle(String title) {
         return awardRepository.findByTitle(title);
     }
 
     @Override
-    public void saveAward(Award award) {
-        awardRepository.save(award);
+    public void saveAward(HAward HAward) {
+        awardRepository.save(HAward);
     }
 
     @Override
-    public void updateAward(Award award) {
-        awardRepository.save(award);
+    public void updateAward(HAward HAward) {
+        awardRepository.save(HAward);
     }
 
     @Override
@@ -41,12 +41,12 @@ public class AwardServiceImpl implements AwardService {
     }
 
     @Override
-    public List<Award> findAllAwards() {
+    public List<HAward> findAllAwards() {
         return awardRepository.findAllOrderBy();
     }
 
     @Override
-    public boolean isAwardExist(Award award) {
-        return findByTitle(award.getTitle()) != null;
+    public boolean isAwardExist(HAward HAward) {
+        return findByTitle(HAward.getTitle()) != null;
     }
 }

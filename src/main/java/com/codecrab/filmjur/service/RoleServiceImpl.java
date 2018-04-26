@@ -20,7 +20,7 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public Role findByTitle(String title) {
-        return roleRepository.findByTitle(title);
+        return roleRepository.findByDescription(title);
     }
 
     @Override
@@ -45,6 +45,6 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public boolean isRoleExist(Role role) {
-        return roleRepository.findByTitle(role.getTitle()) != null;
+        return roleRepository.findByDescription(role.getDescription()) != null;
     }
 }

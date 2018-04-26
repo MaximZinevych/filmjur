@@ -1,6 +1,5 @@
 package com.codecrab.filmjur.controller;
 
-import com.codecrab.filmjur.entity.ProductionCompany;
 import com.codecrab.filmjur.entity.Role;
 import com.codecrab.filmjur.service.RoleService;
 import com.codecrab.filmjur.util.CustomErrorType;
@@ -54,9 +53,9 @@ public class RoleController {
 
         if(roleService.isRoleExist(role)){
             logger.error("Unable to add role. A role with title {} already exists"
-                    , role.getTitle());
+                    , role.getDescription());
             return new ResponseEntity<>(new CustomErrorType("Unable to add. Role with title "
-                    + role.getTitle() + " already exists."), HttpStatus.CONFLICT);
+                    + role.getDescription() + " already exists."), HttpStatus.CONFLICT);
         }
         roleService.saveRole(role);
 
@@ -79,7 +78,7 @@ public class RoleController {
                     id + " not found."), HttpStatus.NOT_FOUND);
         }
 
-        currentRole.setTitle(role.getTitle());
+        currentRole.setDescription(role.getDescription());
         roleService.updateRole(currentRole);
         return new ResponseEntity<>(currentRole, HttpStatus.OK);
     }
